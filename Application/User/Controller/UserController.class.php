@@ -1,5 +1,7 @@
 <?php
 namespace User\Controller;
+use Think\Controller;
+
 /**
  * Created by PhpStorm.
  * User: peng
@@ -8,5 +10,11 @@ namespace User\Controller;
  */
 class UserController extends Controller
 {
+    public function index(){
 
+    }
+
+    public function userList(){
+        $
+    }
 }
