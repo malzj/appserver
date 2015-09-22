@@ -41,6 +41,10 @@ class UserController extends Controller
     }
 
     //Ìí¼ÓÓÃ»§
+    public function userCreate(){
+        $this->display();
+    }
+
     public function userAdd(){
         if(IS_POST){
             $UserModel = M('User');
