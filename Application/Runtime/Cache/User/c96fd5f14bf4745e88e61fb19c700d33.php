@@ -5,6 +5,6 @@
     <title></title>
 </head>
 <body>
-asdg
+<?php echo ($a[1]); ?>
 </body>
 </html>

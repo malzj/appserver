@@ -12,6 +12,9 @@ use Think\Page;
 class UserController extends Controller
 {
     public function index(){
+        $a[1] = 1;
+        $a[2] = 2;
+        $this->assign('a',$a);
         $this->display();
     }
 
