@@ -66,6 +66,6 @@ class UserController extends Controller
     public function userEdit(){
         $companyId = $_REQUEST('companyId');
         $userId = $_REQUEST('userId');
-        
+
     }
 }
