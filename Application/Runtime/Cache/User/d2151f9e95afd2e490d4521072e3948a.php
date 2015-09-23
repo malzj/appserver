@@ -481,7 +481,7 @@
                             新建用户
                         </header>
                         <div class="panel-body">
-                            <form role="form" action="__userAdd">
+                            <form role="form" method="post" action="/appserver1/index.php/User/User/userAdd">
                                 <input type="hidden" name="company_id" />
                                 <div class="form-group">
                                     <label for="username">用户名</label>

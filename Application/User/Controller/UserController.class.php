@@ -19,7 +19,7 @@ class UserController extends Controller
     }
 
     //用户列表
-    public function userlist(){
+    public function userList(){
         $UserModel = M('User');
         $count = $UserModel->count();
         $Page = new Page($count,10);
@@ -50,6 +50,7 @@ class UserController extends Controller
 
     public function userAdd(){
         if(IS_POST){
+            header("Content-Type:text/html; charset=utf-8");
             $UserModel = M('User');
             $data = array();
             $data['name']=$_POST['name'];
