@@ -11,27 +11,27 @@
     <title>Form Component</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/appserver1/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/appserver1/Public/weixinapp/css/bootstrap-reset.css" rel="stylesheet">
+    <link href="/appserver/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/appserver/Public/weixinapp/css/bootstrap-reset.css" rel="stylesheet">
     <!--external css-->
-    <link href="/appserver1/Public/weixinapp/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="/appserver/Public/weixinapp/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="/appserver1/Public/weixinapp/assets/bootstrap-datepicker/css/datepicker.css" />
-    <link rel="stylesheet" type="text/css" href="/appserver1/Public/weixinapp/assets/bootstrap-colorpicker/css/colorpicker.css" />
-    <link rel="stylesheet" type="text/css" href="/appserver1/Public/weixinapp/assets/bootstrap-daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="/appserver/Public/weixinapp/assets/bootstrap-datepicker/css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="/appserver/Public/weixinapp/assets/bootstrap-colorpicker/css/colorpicker.css" />
+    <link rel="stylesheet" type="text/css" href="/appserver/Public/weixinapp/assets/bootstrap-daterangepicker/daterangepicker.css" />
     <!--right slidebar-->
-    <link href="/appserver1/Public/weixinapp/css/slidebars.css" rel="stylesheet">
+    <link href="/appserver/Public/weixinapp/css/slidebars.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="/appserver1/Public/weixinapp/css/style.css" rel="stylesheet">
-    <link href="/appserver1/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
+    <link href="/appserver/Public/weixinapp/css/style.css" rel="stylesheet">
+    <link href="/appserver/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
 
 
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
-    <script src="/appserver1/Public/weixinapp/js/html5shiv.js"></script>
-    <script src="/appserver1/Public/weixinapp/js/respond.min.js"></script>
+    <script src="/appserver/Public/weixinapp/js/html5shiv.js"></script>
+    <script src="/appserver/Public/weixinapp/js/respond.min.js"></script>
     <![endif]-->
 
 
@@ -526,39 +526,39 @@
 </section>
 
 <!-- js placed at the end of the document so the pages load faster -->
-<script src="/appserver1/Public/weixinapp/js/jquery.js"></script>
-<script src="/appserver1/Public/weixinapp/js/bootstrap.min.js"></script>
-<script src="/appserver1/Public/weixinapp/js/jquery.scrollTo.min.js"></script>
-<script src="/appserver1/Public/weixinapp/js/jquery.nicescroll.js" type="text/javascript"></script>
+<script src="/appserver/Public/weixinapp/js/jquery.js"></script>
+<script src="/appserver/Public/weixinapp/js/bootstrap.min.js"></script>
+<script src="/appserver/Public/weixinapp/js/jquery.scrollTo.min.js"></script>
+<script src="/appserver/Public/weixinapp/js/jquery.nicescroll.js" type="text/javascript"></script>
 
-<script src="/appserver1/Public/weixinapp/js/jquery-ui-1.9.2.custom.min.js"></script>
-<script class="include" type="text/javascript" src="/appserver1/Public/weixinapp/js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="/appserver/Public/weixinapp/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script class="include" type="text/javascript" src="/appserver/Public/weixinapp/js/jquery.dcjqaccordion.2.7.js"></script>
 
 <!--custom switch-->
-<script src="/appserver1/Public/weixinapp/js/bootstrap-switch.js"></script>
+<script src="/appserver/Public/weixinapp/js/bootstrap-switch.js"></script>
 <!--custom tagsinput-->
-<script src="/appserver1/Public/weixinapp/js/jquery.tagsinput.js"></script>
+<script src="/appserver/Public/weixinapp/js/jquery.tagsinput.js"></script>
 <!--custom checkbox & radio-->
 <script type="text/javascript" src="js/ga.js"></script>
 
-<script type="text/javascript" src="/appserver1/Public/weixinapp/assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
-<script type="text/javascript" src="/appserver1/Public/weixinapp/assets/bootstrap-daterangepicker/date.js"></script>
-<script type="text/javascript" src="/appserver1/Public/weixinapp/assets/bootstrap-daterangepicker/daterangepicker.js"></script>
-<script type="text/javascript" src="/appserver1/Public/weixinapp/assets/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
-<script type="text/javascript" src="/appserver1/Public/weixinapp/assets/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="/appserver/Public/weixinapp/assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="/appserver/Public/weixinapp/assets/bootstrap-daterangepicker/date.js"></script>
+<script type="text/javascript" src="/appserver/Public/weixinapp/assets/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script type="text/javascript" src="/appserver/Public/weixinapp/assets/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+<script type="text/javascript" src="/appserver/Public/weixinapp/assets/ckeditor/ckeditor.js"></script>
 
-<script type="text/javascript" src="/appserver1/Public/weixinapp/assets/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
-<script src="/appserver1/Public/weixinapp/js/respond.min.js" ></script>
+<script type="text/javascript" src="/appserver/Public/weixinapp/assets/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
+<script src="/appserver/Public/weixinapp/js/respond.min.js" ></script>
 
 <!--right slidebar-->
-<script src="/appserver1/Public/weixinapp/js/slidebars.min.js"></script>
+<script src="/appserver/Public/weixinapp/js/slidebars.min.js"></script>
 
 
 <!--common script for all pages-->
-<script src="/appserver1/Public/weixinapp/js/common-scripts.js"></script>
+<script src="/appserver/Public/weixinapp/js/common-scripts.js"></script>
 
 <!--script for this page-->
-<script src="/appserver1/Public/weixinapp/js/form-component.js"></script>
+<script src="/appserver/Public/weixinapp/js/form-component.js"></script>
 
 </body>
 </html>
