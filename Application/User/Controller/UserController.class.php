@@ -39,7 +39,7 @@ class UserController extends Controller
         $map['company_id'] = $companyId;
         $UserModel = M('User');
         $userInfo = $UserModel->where($map)->select();
-        $this->assign($userInfo);
+        $this->assign('userInfo',$userInfo);
         $this->display();
     }
 
@@ -73,6 +73,12 @@ class UserController extends Controller
     public function userEdit(){
         $companyId = $_REQUEST('companyId');
         $userId = $_REQUEST('userId');
+        $this->display();
+    }
 
+    //更新用户
+    public function userUpdate(){
+        $companyId = $_REQUEST('companyId');
+        $userId = $_REQUEST('userId');
     }
 }
