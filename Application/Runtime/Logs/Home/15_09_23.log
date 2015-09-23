@@ -31,25 +31,25 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003151s ]
 INFO: [ app_end ] --END-- [ RunTime:0.003364s ]
 
-[ 2015-09-23T16:19:47+08:00 ] 127.0.0.1 /appserver1/?XDEBUG_SESSION_START=14006
+[ 2015-09-23T15:52:32+08:00 ] ::1 /appserver/?XDEBUG_SESSION_START=11262
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000873s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.039232s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001013s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017490s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021294s ]
-INFO: [ app_end ] --END-- [ RunTime:0.021526s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002222s ]
 
-[ 2015-09-23T16:20:06+08:00 ] 127.0.0.1 /appserver1/?Xs=User/User/userCreate
+[ 2015-09-23T16:06:23+08:00 ] ::1 /appserver/?XDEBUG_SESSION_START=14435
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001016s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001074s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001369s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001388s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000824s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000799s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001074s ]
 
