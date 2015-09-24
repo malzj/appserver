@@ -1578,7 +1578,7 @@ if(window.google && window.google.maps){
             marker = marker.join('|');
             parameters.push('markers=' + encodeURI(marker));
           }
-          // New marker without styles
+          // Neww marker without styles
           else {
             marker = parameters.pop() + encodeURI('|' + loc);
             parameters.push(marker);

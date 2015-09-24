@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>规划宝后台管理系统</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="__PUBLIC__/guihuabao/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/guihuabao/css/bootstrap-reset.css" rel="stylesheet">
+    <!--external css-->
+    <link href="__PUBLIC__/guihuabao/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="__PUBLIC__/guihuabao/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css " rel="stylesheet">
+    <link href="__PUBLIC__/guihuabao/css/owl.carousel.css" rel="stylesheet">
+
+    <!--right slidebar-->
+    <link href="__PUBLIC__/guihuabao/css/slidebars.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="__PUBLIC__/guihuabao/css/styleone.css" rel="stylesheet">
+    <link href="__PUBLIC__/guihuabao/css/style-responsive.css" rel="stylesheet">
+
+    <link href="__PUBLIC__/guihuabao/css/ownset.css" rel="stylesheet">
+</head>
+
+<body>
+
+<section id="container" >
+    <!--header start-->
+    <include file="header" />
+
+
+    <!--header end-->
+    <!--sidebar start-->
+    <include file="siderbar" />
+    <!--sidebar end-->
+    <!--main content start-->
+    <section id="main-content">
+        <section class="wrapper mt80">
+            <form class="form-horizontal tasi-form"  enctype= "multipart/form-data">
+
+                <div class="hxzs_heading clearfix">
+                    <h2>详情</h2>
+                    <a href="{:U('Beiwanglu/index',array('cid'=>$_SESSION['cid'],'uid'=>$_SESSION['uid'],'companyappid'=>$_SESSION['companyappid']))}" class="btn btn-info" style="display:block;float:right;">返回列表</a>
+                </div>
+                <!--<g:hiddenField name="toolId" value="${toolId}"></g:hiddenField>-->
+                <div class="mt25">
+                    <div class="form-group">
+                        <label class="col-lg-3 col-sm-3 control-label">标题：</label>
+                        <div class="col-lg-10">
+                            <input class="form-control" type="text" value="{$beiwangluInfo.title}"  readonly/>
+                        </div>
+                    </div>
+                    <div class="textarea">
+                        <textarea style="width:100%;height:500px;" readonly >{$beiwangluInfo.content}</textarea>
+                    </div>
+
+                </div>
+            </form>
+        </section>
+        <!--main content end-->
+
+
+    </section>
+
+
+</section>
+</body>
+</html>

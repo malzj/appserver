@@ -1,16 +1,7 @@
-/*
-Template Name: Flat Lab Dashboard build with Bootstrap v3.2.0
-Template Version: 2.0
-Author: Mosaddek Hossain
-Website: http://thevectorlab.net/
-*/
-
-/* Import fonts */
-
 body {
     color: #797979;
     background: #f1f2f7;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;
     padding: 0px !important;
     margin: 0px !important;
     font-size:13px;
@@ -5684,4 +5675,4 @@ a.guest-on i {
     width: 175px;
     margin-right: 10px;
 }
-
+.imgUrl{ width: 68px;}
