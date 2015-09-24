@@ -182,10 +182,10 @@
                     <section class="panel">
                         <!-- page start-->
                         <header class="panel-heading">
-                            公司列表
+                            功能列表
                         </header>
                         <div class="panel-body">
-                            <a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="<?php echo U('company/companycreate');?>">创建公司</a>
+                            <a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="<?php echo U('gongneng/gongnengcreate');?>">创建功能</a>
                             <table class="table table-striped" cellpadding=3 cellspacing=5>
                                 <thead>
                                 <tr>
@@ -211,9 +211,9 @@
                                             <!--奖品包</button></a>-->
                                         <!--<td> <a  href="<?php echo U('rulelist/create','actId='.$vo['id']);?>"><button class="btn btn-primary btn-xs">-->
                                             <!--规则</button></a>-->
-                                        <td> <a  href="<?php echo U('company/companyshow','id='.$vo['id']);?>"><button class="btn btn-primary btn-xs">
+                                        <td> <a  href="<?php echo U('gongneng/gongnengshow','id='.$vo['id']);?>"><button class="btn btn-primary btn-xs">
                                             <i class="fa fa-pencil"></i></button></a>
-                                            <a href="<?php echo U('company/companydelete','id='.$vo['id']);?>" onclick="return confirm('确定将此记录删除?')">
+                                            <a href="<?php echo U('gongneng/gongnengdelete','id='.$vo['id']);?>" onclick="return confirm('确定将此记录删除?')">
                                                 <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></a>
                                         </td>
                                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>

@@ -26,6 +26,7 @@
     <script src="/appserver/Public/js/respond.min.js"></script>
     <![endif]-->
 </head>
+<body>
 <section id="container" class="">
     <!--header start-->
     <!DOCTYPE html>
@@ -177,54 +178,41 @@
     <!--main content start-->
     <section id="main-content">
         <section class="wrapper site-min-height" >
-            <div class="row">
-                <div class="col-sm-12">
-                    <section class="panel">
-                        <!-- page start-->
-                        <header class="panel-heading">
-                            公司列表
-                        </header>
-                        <div class="panel-body">
-                            <a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="<?php echo U('company/companycreate');?>">创建公司</a>
-                            <table class="table table-striped" cellpadding=3 cellspacing=5>
-                                <thead>
-                                <tr>
-                                    <!--<th>#</th>-->
-                                    <th>编号</th>
-                                    <th>名称</th>
-                                    <th>备注</th>
-                                    <th>创建时间</th>
-                                    <th>操作</th>
-
-                                </tr>
-                                </thead>
-                                <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                                        <td><?php echo ($vo["id"]); ?></td>
-                                        <td><?php echo ($vo["name"]); ?></td>
-                                        <td><?php echo ($vo["msg"]); ?></td>
-                                        <td><?php echo ($vo["adddate"]); ?></td>
-
-
-                                        <!--<td> <a  href="<?php echo U('wininfo/wininfolist','actId='.$vo['id']);?>"><button class="btn btn-primary btn-xs">-->
-                                            <!--中奖人</button></a>-->
-                                        <!--<td> <a  href="<?php echo U('redenvelopelist/create','actId='.$vo['id']);?>"><button class="btn btn-primary btn-xs">-->
-                                            <!--奖品包</button></a>-->
-                                        <!--<td> <a  href="<?php echo U('rulelist/create','actId='.$vo['id']);?>"><button class="btn btn-primary btn-xs">-->
-                                            <!--规则</button></a>-->
-                                        <td> <a  href="<?php echo U('company/companyshow','id='.$vo['id']);?>"><button class="btn btn-primary btn-xs">
-                                            <i class="fa fa-pencil"></i></button></a>
-                                            <a href="<?php echo U('company/companydelete','id='.$vo['id']);?>" onclick="return confirm('确定将此记录删除?')">
-                                                <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></a>
-                                        </td>
-                                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                                <tr>
-                                </tr>
-
-                            </table>
-                            <div class="dataTables_paginate paging_bootstrap pagination"><?php echo ($page); ?></div>
+            <section class="panel">
+                <header class="panel-heading">
+                    新建功能
+                </header>
+                <!-- page start-->
+                <div class="panel-body">
+                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="/appserver/index.php/Login/Gongneng/gongnengadd">
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">名称</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="name" class="form-control">
+                            </div>
                         </div>
-                    </section>
-                </div></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">连接</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="url" class="form-control">
+                            </div>
+                        </div> <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">备注</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="msg" class="form-control">
+                            </div>
+                        </div>
+                        <button type="submit" id="s" class="btn btn-info">提交</button>
+                        <a href="<?php echo U('gongneng/gongnenglist');?>" class="btn btn-danger">取消</a>
+
+                    </form>
+
+                </div>
+
+
+
+            </section>
+
             <!-- page end-->
         </section>
     </section>
@@ -266,7 +254,7 @@
 
 <!--common script for all pages-->
 <script src="/appserver/Public/weixinapp/js/common-scripts.js"></script>
-<body>
+
 
 </body>
 </html>
