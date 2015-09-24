@@ -121,3 +121,376 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001348s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001623s ]
 
+[ 2015-09-23T17:38:12+08:00 ] ::1 /appserver/index.php/Login/Company/companylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+NOTIC: [8] Undefined variable: list F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\cbb793e795f632e35791d48ecca7ece1.php 第 200 行.
+NOTIC: [8] Undefined variable: page F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\cbb793e795f632e35791d48ecca7ece1.php 第 222 行.
+NOTIC: [8] Undefined variable: page F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\cbb793e795f632e35791d48ecca7ece1.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017827s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018079s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001205s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001400s ]
+
+[ 2015-09-23T17:39:22+08:00 ] ::1 /appserver/index.php/Login/Company/companylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000405s ]
+NOTIC: [8] Undefined variable: list F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\cbb793e795f632e35791d48ecca7ece1.php 第 200 行.
+NOTIC: [8] Undefined variable: page F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\cbb793e795f632e35791d48ecca7ece1.php 第 222 行.
+NOTIC: [8] Undefined variable: page F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\cbb793e795f632e35791d48ecca7ece1.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001080s ]
+
+[ 2015-09-23T17:40:14+08:00 ] ::1 /appserver/index.php/Login/company/companycreate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001446s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Login/View/Activity/thinktankheader.html): failed to open stream: No such file or directory F:\wamp\wamp\www\appserver\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Login/View/Activity/thinktankaside.html): failed to open stream: No such file or directory F:\wamp\wamp\www\appserver\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+NOTIC: [8] Undefined variable: btime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 151 行.
+NOTIC: [8] Undefined variable: otime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 152 行.
+NOTIC: [8] Undefined variable: btime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 161 行.
+NOTIC: [8] Undefined variable: otime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 162 行.
+NOTIC: [8] Undefined variable: nowpage F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 171 行.
+NOTIC: [8] Undefined variable: nowpage F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 175 行.
+NOTIC: [8] Undefined variable: count F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 176 行.
+NOTIC: [8] Undefined variable: count F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 179 行.
+NOTIC: [8] Undefined variable: btime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 188 行.
+NOTIC: [8] Undefined variable: otime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 189 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001633s ]
+
+[ 2015-09-23T17:56:47+08:00 ] ::1 /appserver/index.php/Login/company/companycreate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001882s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8] Undefined variable: page F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 263 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013483s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001597s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001507s ]
+
+[ 2015-09-23T18:03:40+08:00 ] ::1 /appserver/index.php/Login/company/companycreate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001576s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000499s ]
+NOTIC: [8] Undefined variable: page F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 255 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.211498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.211743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001403s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001661s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001811s ]
+
+[ 2015-09-23T18:05:26+08:00 ] ::1 /appserver/index.php/Login/company/companycreate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+NOTIC: [8] Undefined variable: page F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 255 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014900s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001119s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001318s ]
+
+[ 2015-09-23T18:06:19+08:00 ] ::1 /appserver/index.php/Login/company/companycreate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000350s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000742s ]
+NOTIC: [8] Undefined variable: page F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 255 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013562s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001185s ]
+
+[ 2015-09-23T18:08:57+08:00 ] ::1 /appserver/index.php/Login/company/companycreate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001276s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000252s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000526s ]
+NOTIC: [8] Undefined variable: page F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 256 行.
+NOTIC: [8] Undefined variable: btime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 276 行.
+NOTIC: [8] Undefined variable: otime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 277 行.
+NOTIC: [8] Undefined variable: btime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 286 行.
+NOTIC: [8] Undefined variable: otime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 287 行.
+NOTIC: [8] Undefined variable: nowpage F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 296 行.
+NOTIC: [8] Undefined variable: nowpage F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 300 行.
+NOTIC: [8] Undefined variable: count F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 301 行.
+NOTIC: [8] Undefined variable: count F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 304 行.
+NOTIC: [8] Undefined variable: btime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 313 行.
+NOTIC: [8] Undefined variable: otime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 314 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002056s ]
+
+[ 2015-09-23T18:09:04+08:00 ] ::1 /appserver/index.php/Login/company/companycreate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001138s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000256s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000493s ]
+NOTIC: [8] Undefined variable: page F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 256 行.
+NOTIC: [8] Undefined variable: btime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 276 行.
+NOTIC: [8] Undefined variable: otime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 277 行.
+NOTIC: [8] Undefined variable: btime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 286 行.
+NOTIC: [8] Undefined variable: otime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 287 行.
+NOTIC: [8] Undefined variable: nowpage F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 296 行.
+NOTIC: [8] Undefined variable: nowpage F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 300 行.
+NOTIC: [8] Undefined variable: count F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 301 行.
+NOTIC: [8] Undefined variable: count F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 304 行.
+NOTIC: [8] Undefined variable: btime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 313 行.
+NOTIC: [8] Undefined variable: otime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 314 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001580s ]
+
+[ 2015-09-23T18:09:05+08:00 ] ::1 /appserver/index.php/Login/company/companycreate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002373s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000405s ]
+NOTIC: [8] Undefined variable: page F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 256 行.
+NOTIC: [8] Undefined variable: btime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 276 行.
+NOTIC: [8] Undefined variable: otime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 277 行.
+NOTIC: [8] Undefined variable: btime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 286 行.
+NOTIC: [8] Undefined variable: otime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 287 行.
+NOTIC: [8] Undefined variable: nowpage F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 296 行.
+NOTIC: [8] Undefined variable: nowpage F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 300 行.
+NOTIC: [8] Undefined variable: count F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 301 行.
+NOTIC: [8] Undefined variable: count F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 304 行.
+NOTIC: [8] Undefined variable: btime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 313 行.
+NOTIC: [8] Undefined variable: otime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 314 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021445s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004866s ]
+
+[ 2015-09-23T18:12:31+08:00 ] ::1 /appserver/index.php/Login/company/companycreate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000397s ]
+NOTIC: [8] Undefined variable: page F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 256 行.
+NOTIC: [8] Undefined variable: btime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 276 行.
+NOTIC: [8] Undefined variable: otime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 277 行.
+NOTIC: [8] Undefined variable: btime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 286 行.
+NOTIC: [8] Undefined variable: otime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 287 行.
+NOTIC: [8] Undefined variable: nowpage F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 296 行.
+NOTIC: [8] Undefined variable: nowpage F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 300 行.
+NOTIC: [8] Undefined variable: count F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 301 行.
+NOTIC: [8] Undefined variable: count F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 304 行.
+NOTIC: [8] Undefined variable: btime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 313 行.
+NOTIC: [8] Undefined variable: otime F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 314 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001436s ]
+
+[ 2015-09-23T18:21:10+08:00 ] ::1 /appserver/index.php/Login/company/companycreate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+NOTIC: [8] Undefined variable: page F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010907s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001036s ]
+
+[ 2015-09-23T18:21:38+08:00 ] ::1 /appserver/index.php/Login/company/companycreate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+NOTIC: [8] Undefined variable: page F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\4c60c88a3c25bae2b7eb6024d217b2c6.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011774s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000771s ]
+
+[ 2015-09-23T18:21:41+08:00 ] ::1 /appserver/index.php/Login/Company/companyadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001346s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0199s ]
+SQL: INSERT INTO `company` (`name`,`msg`,`addDate`) VALUES ('123','123','2015-09-23') [ RunTime:0.1573s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001044s ]
+
+[ 2015-09-23T18:21:42+08:00 ] ::1 /appserver/index.php/Login/company/companylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000161s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001527s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000285s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000554s ]
+NOTIC: [8] Undefined variable: list F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\cbb793e795f632e35791d48ecca7ece1.php 第 201 行.
+NOTIC: [8] Undefined variable: page F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\cbb793e795f632e35791d48ecca7ece1.php 第 223 行.
+NOTIC: [8] Undefined variable: page F:\wamp\wamp\www\appserver\Application\Runtime\Cache\Login\cbb793e795f632e35791d48ecca7ece1.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001709s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002175s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002587s ]
+

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
 
-    <title>Blank</title>
+    <title>微宝</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/appserver/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
@@ -182,46 +182,38 @@
                     <section class="panel">
                         <!-- page start-->
                         <header class="panel-heading">
-                            活动列表
+                            公司列表
                         </header>
                         <div class="panel-body">
-                            <a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="<?php echo U('Activity/create');?>">创建活动</a>
+                            <a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="<?php echo U('company/companycreate');?>">创建公司</a>
                             <table class="table table-striped" cellpadding=3 cellspacing=5>
                                 <thead>
                                 <tr>
                                     <!--<th>#</th>-->
-                                    <th>活动名称</th>
-                                    <th>活动描述</th>
-                                    <th>开始时间</th>
-                                    <th>结束时间</th>
-                                    <th>活动总预算</th>
-                                    <th>活动已用预算</th>
-                                    <th>活动剩余预算</th>
-                                    <th>中奖记录</th>
-                                    <th>活动红包</th>
-                                    <th>活动规则</th>
+                                    <th>编号</th>
+                                    <th>名称</th>
+                                    <th>备注</th>
+                                    <th>创建时间</th>
                                     <th>操作</th>
 
                                 </tr>
                                 </thead>
                                 <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+                                        <td><?php echo ($vo["id"]); ?></td>
                                         <td><?php echo ($vo["name"]); ?></td>
-                                        <td><?php echo ($vo["digest"]); ?></td>
-                                        <td><?php echo ($vo["btime"]); ?></td>
-                                        <td><?php echo ($vo["otime"]); ?></td>
-                                        <td><?php echo ($vo["zys"]); ?></td>
-                                        <td><?php echo ($vo["yyjs"]); ?></td>
-                                        <td><?php echo ($vo["syys"]); ?></td>
+                                        <td><?php echo ($vo["msg"]); ?></td>
+                                        <td><?php echo ($vo["adddate"]); ?></td>
 
-                                        <td> <a  href="<?php echo U('wininfo/wininfolist','actId='.$vo['id']);?>"><button class="btn btn-primary btn-xs">
-                                            中奖人</button></a>
-                                        <td> <a  href="<?php echo U('redenvelopelist/create','actId='.$vo['id']);?>"><button class="btn btn-primary btn-xs">
-                                            奖品包</button></a>
-                                        <td> <a  href="<?php echo U('rulelist/create','actId='.$vo['id']);?>"><button class="btn btn-primary btn-xs">
-                                            规则</button></a>
-                                        <td> <a  href="<?php echo U('activity/view','id='.$vo['id']);?>"><button class="btn btn-primary btn-xs">
+
+                                        <!--<td> <a  href="<?php echo U('wininfo/wininfolist','actId='.$vo['id']);?>"><button class="btn btn-primary btn-xs">-->
+                                            <!--中奖人</button></a>-->
+                                        <!--<td> <a  href="<?php echo U('redenvelopelist/create','actId='.$vo['id']);?>"><button class="btn btn-primary btn-xs">-->
+                                            <!--奖品包</button></a>-->
+                                        <!--<td> <a  href="<?php echo U('rulelist/create','actId='.$vo['id']);?>"><button class="btn btn-primary btn-xs">-->
+                                            <!--规则</button></a>-->
+                                        <td> <a  href="<?php echo U('company/companyshow','id='.$vo['id']);?>"><button class="btn btn-primary btn-xs">
                                             <i class="fa fa-pencil"></i></button></a>
-                                            <a href="<?php echo U('activity/delete','id='.$vo['id']);?>" onclick="return confirm('确定将此记录删除?')">
+                                            <a href="<?php echo U('company/companydelete','id='.$vo['id']);?>" onclick="return confirm('确定将此记录删除?')">
                                                 <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></a>
                                         </td>
                                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>

@@ -1639,7 +1639,7 @@
 				
 				if ( cOption == '<' )
 				{
-					/* New container div */
+					/* Neww container div */
 					nNewNode = $('<div></div>')[0];
 					
 					/* Check to see if we should append an id and/or a class name to the container */
