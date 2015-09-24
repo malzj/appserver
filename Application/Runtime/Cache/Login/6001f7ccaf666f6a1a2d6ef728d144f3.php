@@ -176,66 +176,57 @@
     <!--sidebar end-->
     <!--main content start-->
     <section id="main-content">
-        <section class="wrapper site-min-height" >
+        <section class="wrapper">
+            <!-- page start-->
             <div class="row">
-                <div class="col-sm-12">
+                <div style="margin: 10% auto 0; width: 50%;">
                     <section class="panel">
-                        <!-- page start-->
                         <header class="panel-heading">
-                            活动列表
+                            新建用户
                         </header>
                         <div class="panel-body">
-                            <a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="<?php echo U('Activity/create');?>">创建活动</a>
-                            <table class="table table-striped" cellpadding=3 cellspacing=5>
-                                <thead>
-                                <tr>
-                                    <!--<th>#</th>-->
-                                    <th>活动名称</th>
-                                    <th>活动描述</th>
-                                    <th>开始时间</th>
-                                    <th>结束时间</th>
-                                    <th>活动总预算</th>
-                                    <th>活动已用预算</th>
-                                    <th>活动剩余预算</th>
-                                    <th>中奖记录</th>
-                                    <th>活动红包</th>
-                                    <th>活动规则</th>
-                                    <th>操作</th>
+                            <form role="form" method="post" action="/appserver1/index.php/Login/User/userAdd">
+                                <input type="hidden" name="company_id" />
+                                <div class="form-group">
+                                    <label for="username">用户名</label>
+                                    <input type="text" class="form-control" id="username" name="username"
+                                           placeholder="请输入用户名">
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputPassword">密码</label>
+                                    <input type="password" class="form-control" id="InputPassword" name="password"
+                                           placeholder="请输入密码">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">姓名</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="请输
+入姓名">
+                                </div>
+                                <div class="form-group">
+                                    <label for="city">城市</label>
+                                    <input type="text" class="form-control" id="city" name="city" placeholder="请输
+入城市">
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">地址</label>
+                                    <input type="text" class="form-control" id="address" name="address"
+                                           placeholder="请输入地址">
+                                </div>
+                                <div class="form-group">
+                                    <label for="role">权限</label>
+                                    <select type="text" class="form-control" id="role" name="role" placeholder="请
+输入权限">
+                                        <option value="" selected>请选择权限</option>
+                                        <option value="1" selected>1</option>
+                                    </select>
+                                </div>
 
-                                </tr>
-                                </thead>
-                                <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                                        <td><?php echo ($vo["name"]); ?></td>
-                                        <td><?php echo ($vo["digest"]); ?></td>
-                                        <td><?php echo ($vo["btime"]); ?></td>
-                                        <td><?php echo ($vo["otime"]); ?></td>
-                                        <td><?php echo ($vo["zys"]); ?></td>
-                                        <td><?php echo ($vo["yyjs"]); ?></td>
-                                        <td><?php echo ($vo["syys"]); ?></td>
+                                <button type="submit" class="btn btn-info">保存</button>
+                                <a class="btn btn-info" href="javascript:history.go(-1);" >返回</a>
+                            </form>
 
-                                        <td> <a  href="<?php echo U('wininfo/wininfolist','actId='.$vo['id']);?>"><button class="btn btn-primary btn-xs">
-                                            中奖人</button></a>
-                                        <td> <a  href="<?php echo U('redenvelopelist/create','actId='.$vo['id']);?>"><button class="btn btn-primary btn-xs">
-                                            奖品包</button></a>
-                                        <td> <a  href="<?php echo U('rulelist/create','actId='.$vo['id']);?>"><button class="btn btn-primary btn-xs">
-                                            规则</button></a>
-                                        <td> <a  href="<?php echo U('activity/view','id='.$vo['id']);?>"><button class="btn btn-primary btn-xs">
-                                            <i class="fa fa-pencil"></i></button></a>
-                                            <a href="<?php echo U('activity/delete','id='.$vo['id']);?>" onclick="return confirm('确定将此记录删除?')">
-                                                <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></a>
-                                        </td>
-                                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                                <tr>
-                                </tr>
-
-                            </table>
-                            <div class="dataTables_paginate paging_bootstrap pagination"><?php echo ($page); ?></div>
                         </div>
                     </section>
-                </div></div>
-            <!-- page end-->
-        </section>
-    </section>
     <!--main content end-->
 
     <!-- Right Slidebar start -->
@@ -246,16 +237,16 @@
     <!-- Right Slidebar end -->
 
     <!--footer start-->
-    <footer class="site-footer">
-        <div class="text-center">
-            2014 &copy; vkadmin by Kairos.
-            <a href="#" class="go-top">
-                <i class="fa fa-angle-up"></i>
-            </a>
-        </div>
-    </footer>
+    <!--<footer class="site-footer">-->
+        <!--<div class="text-center">-->
+            <!--2014 &copy; vkadmin by Kairos.-->
+            <!--<a href="#" class="go-top">-->
+                <!--<i class="fa fa-angle-up"></i>-->
+            <!--</a>-->
+        <!--</div>-->
+    <!--</footer>-->
     <!--footer end-->
-</section>
+
 
 
 <!--<div class="result page"><?php echo ($page); ?></div>-->

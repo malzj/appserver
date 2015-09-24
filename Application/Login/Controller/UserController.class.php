@@ -1,5 +1,5 @@
 <?php
-namespace User\Controller;
+namespace Login\Controller;
 use Think\Controller;
 use Think\Page;
 
@@ -19,7 +19,7 @@ class UserController extends Controller
     }
 
     //用户列表
-    public function userList(){
+    public function userlist(){
         $UserModel = M('User');
         $count = $UserModel->count();
         $Page = new Page($count,10);
@@ -31,7 +31,7 @@ class UserController extends Controller
     }
 
     //显示用户
-    public function userShow(){
+    public function usershow(){
         $companyId = $_REQUEST("companyId");
         $userId = $_REQUEST("userId");
         $map = array();
@@ -44,11 +44,11 @@ class UserController extends Controller
     }
 
     //添加用户
-    public function userCreate(){
+    public function usercreate(){
         $this->display();
     }
 
-    public function userAdd(){
+    public function useradd(){
         if(IS_POST){
             header("Content-Type:text/html; charset=utf-8");
             $UserModel = M('User');
@@ -71,15 +71,16 @@ class UserController extends Controller
     }
 
     //编辑用户
-    public function userEdit(){
+    public function useredit(){
         $companyId = $_REQUEST('companyId');
         $userId = $_REQUEST('userId');
         $this->display();
     }
 
     //更新用户
-    public function userUpdate(){
+    public function userupdate(){
         $companyId = $_REQUEST('companyId');
         $userId = $_REQUEST('userId');
+        $this->display();
     }
 }
