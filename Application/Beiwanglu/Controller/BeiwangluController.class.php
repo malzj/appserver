@@ -8,7 +8,7 @@
 
 namespace Beiwanglu\Controller;
 
-
+use Think\Page;
 use Think\Controller;
 
 class BeiwangluController extends Controller
@@ -16,6 +16,7 @@ class BeiwangluController extends Controller
 
     //用户列表
     public function index(){
+        import('ORG.Util.Page');
         $cid=$_GET['cid'];
         $uid=$_GET['uid'];
         $companyappid=$_GET['companyappid'];
@@ -23,16 +24,17 @@ class BeiwangluController extends Controller
         $_SESSION['uid']=$uid;
         $_SESSION['companyappid']=$companyappid;
         $beiwangluModel = M('Beiwanglu');
-        $count = $beiwangluModel->count();
-//        $Page = new Page($count,10);
-//        $show = $Page->show();
 
         $map = array();
         $map['cid'] = $cid;
         $map['uid'] = $uid;
-        $list = $beiwangluModel->where($map)->order('date_create desc')->select();
+        $map['companyappid'] = $companyappid;
+        $count =  $beiwangluModel->where($map)->count();
+        $Page = new Page($count,10);
+        $show = $Page->show();
+        $list = $beiwangluModel->where($map)->order('date_create desc')->limit($Page->firstRow.','.$Page->listRows)->select();
         $this->assign('list',$list);
-//        $this->assign('page',$show);
+        $this->assign('page',$show);
         $this->display();
     }
 

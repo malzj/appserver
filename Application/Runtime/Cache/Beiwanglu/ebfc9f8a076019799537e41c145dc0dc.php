@@ -19,6 +19,10 @@
     <link href="/appserver1/Public/guihuabao/css/style-responsive.css" rel="stylesheet">
 
     <link href="/appserver1/Public/guihuabao/css/ownset.css" rel="stylesheet">
+    <style rel="stylesheet">
+    .pagination .num,.current{display:inline-block;height:20px;width:20px;margin-right: 5px;border:1px solid #d2d2d2;}
+    .pagination .current{background-color:#1D70F2;color:#fff;}
+    </style>
 </head>
 
 <body>
@@ -84,7 +88,7 @@
                             </tbody>
                         </table>
                         <div class="pagination">
-                           <!--<?php echo ($page); ?>-->
+                            <?php echo ($page); ?>
                         </div>
                     </section>
                 </div>

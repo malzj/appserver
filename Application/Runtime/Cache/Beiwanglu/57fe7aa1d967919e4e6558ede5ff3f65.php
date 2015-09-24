@@ -83,32 +83,6 @@
         <!--main content end-->
     </section>
 
-    <!-- js placed at the end of the document so the pages load faster -->
-    <script src="${resource(dir: 'js', file: 'jquery.js')}"></script>
-    <script src="${resource(dir: 'js', file: 'bootstrap.min.js')}"></script>
-    <script class="include" type="text/javascript" src="${resource(dir: 'js', file: 'jquery.dcjqaccordion.2.7.js')}"></script>
-    <script src="${resource(dir: 'js', file: 'jquery.scrollTo.min.js')}"></script>
-    <script src="${resource(dir: 'js', file: 'jquery.nicescroll.js')}" type="text/javascript"></script>
-    <script src="${resource(dir: 'js', file: 'jquery.sparkline.js')}" type="text/javascript"></script>
-    <script src="${resource(dir: 'assets/jquery-easy-pie-chart/', file: 'jquery.easy-pie-chart.js')}"></script>
-    <script src="${resource(dir: 'js', file: 'owl.carousel.js')}" ></script>
-    <script src="${resource(dir: 'js', file: 'jquery.customSelect.min.js')}" ></script>
-    <script src="${resource(dir: 'js', file: 'respond.min.js')}" ></script>
-
-    <!--right slidebar-->
-    <script src="${resource(dir: 'js', file: 'slidebars.min.js')}"></script>
-
-    <!--common script for all pages-->
-    <script src="${resource(dir: 'js', file: 'common-scripts.js')}"></script>
-
-    <!--script for this page-->
-    <script src="${resource(dir: 'js', file: 'sparkline-chart.js')}"></script>
-    <script src="${resource(dir: 'js', file: 'easy-pie-chart.js')}"></script>
-    <script src="${resource(dir: 'js', file: 'count.js')}"></script>
-
-    <!--keditor js-->
-    <script charset="utf-8" src="${resource(dir: 'keditor', file: 'kindeditor.js')}"></script>
-    <script charset="utf-8" src="${resource(dir: 'keditor/lang', file: 'zh_CN.js')}"></script>
-</section>
+  </section>
 </body>
 </html>
