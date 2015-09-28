@@ -73,6 +73,7 @@ class BeiwangluController extends Controller
 
             $data['title'] = $_POST['title'];
             $data['content'] = $_POST['content'];
+ 
             $data['date_create'] = date('Y-m-d',time());
 
             $id = $beiwanglurModel->add($data);
