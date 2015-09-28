@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>规划宝后台管理系统</title>
-
+    <meta charset="utf-8"/>
     <!-- Bootstrap core CSS -->
     <link href="/appserver1/Public/guihuabao/css/bootstrap.min.css" rel="stylesheet">
     <link href="/appserver1/Public/guihuabao/css/bootstrap-reset.css" rel="stylesheet">
