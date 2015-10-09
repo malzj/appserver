@@ -8,22 +8,22 @@
     <title>微宝</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/appserver/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/appserver/Public/weixinapp/css/bootstrap-reset.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/bootstrap-reset.css" rel="stylesheet">
     <!--external css-->
-    <link href="/appserver/Public/weixinapp/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="/appserver1/Public/weixinapp/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
 
     <!--right slidebar-->
-    <link href="/appserver/Public/weixinapp/css/slidebars.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/slidebars.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/appserver/Public/weixinapp/css/style.css" rel="stylesheet">
-    <link href="/appserver/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
+    <link href="/appserver1/Public/weixinapp/css/style.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
-    <script src="/appserver/Public/js/html5shiv.js"></script>
-    <script src="/appserver/Public/js/respond.min.js"></script>
+    <script src="/appserver1/Public/js/html5shiv.js"></script>
+    <script src="/appserver1/Public/js/respond.min.js"></script>
     <![endif]-->
 </head>
 <section id="container" class="">
@@ -38,22 +38,22 @@
     <title>Blank</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/appserver/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/appserver/Public/weixinapp/css/bootstrap-reset.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/bootstrap-reset.css" rel="stylesheet">
     <!--external css-->
-    <link href="/appserver/Public/weixinapp/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="/appserver1/Public/weixinapp/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
 
     <!--right slidebar-->
-    <link href="/appserver/Public/weixinapp/css/slidebars.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/slidebars.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/appserver/Public/weixinapp/css/style.css" rel="stylesheet">
-    <link href="/appserver/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
+    <link href="/appserver1/Public/weixinapp/css/style.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
-    <script src="/appserver/Public/weixinapp/js/html5shiv.js"></script>
-    <script src="/appserver/Public/weixinapp/js/respond.min.js"></script>
+    <script src="/appserver1/Public/weixinapp/js/html5shiv.js"></script>
+    <script src="/appserver1/Public/weixinapp/js/respond.min.js"></script>
     <![endif]-->
 </head>
 <body>
@@ -110,26 +110,26 @@
     <title>Blank</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/appserver/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/appserver/Public/weixinapp/css/bootstrap-reset.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/bootstrap-reset.css" rel="stylesheet">
     <!--external css-->
-    <link href="/appserver/Public/weixinapp/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="/appserver1/Public/weixinapp/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
 
     <!--right slidebar-->
-    <link href="/appserver/Public/weixinapp/css/slidebars.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/slidebars.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/appserver/Public/weixinapp/css/style.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/style.css" rel="stylesheet">
 
-    <link href="/appserver/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
+    <link href="/appserver1/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
     <style type="text/css">
         ul.sidebar-menu li ul.sub li a.activeColor{ color:#fff;}
     </style>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
-    <script src="/appserver/Public/weixinapp/js/html5shiv.js"></script>
-    <script src="/appserver/Public/weixinapp/js/respond.min.js"></script>
+    <script src="/appserver1/Public/weixinapp/js/html5shiv.js"></script>
+    <script src="/appserver1/Public/weixinapp/js/respond.min.js"></script>
 
     <![endif]-->
 </head>
@@ -147,12 +147,13 @@
                     <span>活动</span>
                 </a>
                 <ul class="sub">
-                    <li><a id="a1" class="activeColor" href="<?php echo U('Front/companyuserlist','mokuai_id='.$mokuai_id);?>">用户列表1</a></li>
+
+                    <li><a id="a1" class="activeColor" href="<?php echo U('User/userlist');?>">用户列表</a></li>
 
                 </ul>
                 <ul class="sub">
 
-                    <li><a id="a2" class="activeColor" href="<?php echo U('Front/memberlist','mokuai_id='.$mokuai_id);?>">会员管理列表</a></li>
+                    <li><a id="a2" class="activeColor" href="<?php echo U('Company/companylist');?>">公司列表</a></li>
 
                 </ul>
                 <ul class="sub">
@@ -168,7 +169,7 @@
         <!-- sidebar menu end-->
     </div>
 </aside>
-<script src="/appserver/Public/weixinapp/js/jquery.js"></script>
+<script src="/appserver1/Public/weixinapp/js/jquery.js"></script>
 
 </body>
 </html>
@@ -181,10 +182,10 @@
                     <section class="panel">
                         <!-- page start-->
                         <header class="panel-heading">
-                            用户列表
+                            公司用户列表
                         </header>
                         <div class="panel-body">
-                            <a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="<?php echo U('Front/companyusercreate','mokuai_id='.$mokuai_id);?>">创建用户</a>
+                            <a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="<?php echo U('front/companyusercreate');?>">创建用户</a>
                             <table class="table table-striped" cellpadding=3 cellspacing=5>
                                 <thead>
                                 <tr>
@@ -259,16 +260,16 @@
 
 
 
-<script src="/appserver/Public/weixinapp/js/jquery.js"></script>
-<script src="/appserver/Public/weixinapp/js/bootstrap.min.js"></script>
-<script class="include" type="text/javascript" src="/appserver/Public/weixinapp/js/jquery.dcjqaccordion.2.7.js"></script>
-<script src="/appserver/Public/weixinapp/js/jquery.scrollTo.min.js"></script>
-<script src="/appserver/Public/weixinapp/js/slidebars.min.js"></script>
-<script src="/appserver/Public/weixinapp/js/jquery.nicescroll.js" type="text/javascript"></script>
-<script src="/appserver/Public/weixinapp/js/respond.min.js" ></script>
+<script src="/appserver1/Public/weixinapp/js/jquery.js"></script>
+<script src="/appserver1/Public/weixinapp/js/bootstrap.min.js"></script>
+<script class="include" type="text/javascript" src="/appserver1/Public/weixinapp/js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="/appserver1/Public/weixinapp/js/jquery.scrollTo.min.js"></script>
+<script src="/appserver1/Public/weixinapp/js/slidebars.min.js"></script>
+<script src="/appserver1/Public/weixinapp/js/jquery.nicescroll.js" type="text/javascript"></script>
+<script src="/appserver1/Public/weixinapp/js/respond.min.js" ></script>
 
 <!--common script for all pages-->
-<script src="/appserver/Public/weixinapp/js/common-scripts.js"></script>
+<script src="/appserver1/Public/weixinapp/js/common-scripts.js"></script>
 <body>
 
 </body>

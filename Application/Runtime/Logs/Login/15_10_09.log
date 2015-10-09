@@ -402,3 +402,764 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000796s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000986s ]
 
+[ 2015-10-09T15:23:47+08:00 ] 127.0.0.1 /appserver1/index.php/login/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001289s ]
+NOTIC: [8] Undefined index: xinxi D:\wamp\www\appserver1\Application\Login\Controller\LoginController.class.php 第 18 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000503s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027151s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002767s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001983s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002252s ]
+
+[ 2015-10-09T15:23:58+08:00 ] 127.0.0.1 /appserver1/index.php/Login/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001288s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'zhangjing' AND `password` = 'zhangjing' LIMIT 1   [ RunTime:0.0064s ]
+
+[ 2015-10-09T15:23:58+08:00 ] 127.0.0.1 /appserver1/index.php/Login/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001633s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` ORDER BY date_create desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `company` WHERE ( id = 5 ) LIMIT 1   [ RunTime:0.0148s ]
+SQL: SELECT * FROM `company` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000398s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044826s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045091s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000952s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001144s ]
+
+[ 2015-10-09T15:24:03+08:00 ] 127.0.0.1 /appserver1/index.php/Login/Gongneng/gongnenglist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001157s ]
+SQL: SHOW COLUMNS FROM `gongneng` [ RunTime:0.0233s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gongneng` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `gongneng` ORDER BY addDate desc LIMIT 0,10   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000433s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031302s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001600s ]
+
+[ 2015-10-09T15:24:05+08:00 ] 127.0.0.1 /appserver1/index.php/Login/Company/companylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001269s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0071s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `company` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `company` ORDER BY addDate desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000405s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026484s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001800s ]
+
+[ 2015-10-09T15:24:07+08:00 ] 127.0.0.1 /appserver1/index.php/Login/mokuai/mokuailist/Id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001309s ]
+SQL: SHOW COLUMNS FROM `mokuai` [ RunTime:0.0075s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mokuai` WHERE `company_id` = '5' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `mokuai` WHERE `company_id` = '5' ORDER BY add_date desc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `gongneng` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000251s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000580s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051407s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001268s ]
+
+[ 2015-10-09T15:25:03+08:00 ] 127.0.0.1 /appserver1/index.php/Login/mokuai/mokuaishow/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001492s ]
+SQL: SHOW COLUMNS FROM `mokuai` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `mokuai` WHERE ( id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `gongneng` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `gongneng`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000473s ]
+NOTIC: [8] Use of undefined constant company_id - assumed 'company_id' D:\wamp\www\appserver1\Application\Runtime\Cache\Login\a3c4d012a1ca1afce97665d34b17480a.php 第 201 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\appserver1\Application\Runtime\Cache\Login\a3c4d012a1ca1afce97665d34b17480a.php 第 201 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\appserver1\Application\Runtime\Cache\Login\a3c4d012a1ca1afce97665d34b17480a.php 第 258 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046796s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046998s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001393s ]
+
+[ 2015-10-09T15:25:17+08:00 ] 127.0.0.1 /appserver1/index.php/Login/mokuai/mokuailist/Id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001324s ]
+SQL: SHOW COLUMNS FROM `mokuai` [ RunTime:0.0206s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mokuai` WHERE `company_id` = '5' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `mokuai` WHERE `company_id` = '5' ORDER BY add_date desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `gongneng` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000473s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035845s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001131s ]
+
+[ 2015-10-09T15:25:20+08:00 ] 127.0.0.1 /appserver1/index.php/Login/mokuai/mokuaishow/id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001582s ]
+SQL: SHOW COLUMNS FROM `mokuai` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `mokuai` WHERE ( id = 8 ) LIMIT 1   [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `gongneng` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `gongneng`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000224s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000489s ]
+NOTIC: [8] Use of undefined constant company_id - assumed 'company_id' D:\wamp\www\appserver1\Application\Runtime\Cache\Login\a3c4d012a1ca1afce97665d34b17480a.php 第 201 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\appserver1\Application\Runtime\Cache\Login\a3c4d012a1ca1afce97665d34b17480a.php 第 201 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\appserver1\Application\Runtime\Cache\Login\a3c4d012a1ca1afce97665d34b17480a.php 第 258 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001610s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001599s ]
+
+[ 2015-10-09T15:25:23+08:00 ] 127.0.0.1 /appserver1/index.php/Login/Gongneng/gongnenglist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001229s ]
+SQL: SHOW COLUMNS FROM `gongneng` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gongneng` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `gongneng` ORDER BY addDate desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000392s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001101s ]
+
+[ 2015-10-09T15:25:25+08:00 ] 127.0.0.1 /appserver1/index.php/Login/gongneng/gongnengshow/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001178s ]
+SQL: SHOW COLUMNS FROM `gongneng` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000511s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\appserver1\Application\Runtime\Cache\Login\6a4c099d7bae3bd02a1d86084223824c.php 第 244 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040635s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001109s ]
+
+[ 2015-10-09T15:26:03+08:00 ] 127.0.0.1 /appserver1/index.php/Login/Company/companylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001383s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `company` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `company` ORDER BY addDate desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000397s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000989s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001224s ]
+
+[ 2015-10-09T15:26:04+08:00 ] 127.0.0.1 /appserver1/index.php/Login/mokuai/mokuailist/Id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `mokuai` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mokuai` WHERE `company_id` = '5' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `mokuai` WHERE `company_id` = '5' ORDER BY add_date desc LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `gongneng` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000461s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001188s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001420s ]
+
+[ 2015-10-09T15:36:47+08:00 ] 127.0.0.1 /appserver1/index.php/Login/Company/companylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001592s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `company` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `company` ORDER BY addDate desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000411s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028222s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001298s ]
+
+[ 2015-10-09T15:36:50+08:00 ] 127.0.0.1 /appserver1/index.php/Login/mokuai/mokuailist/Id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001303s ]
+SQL: SHOW COLUMNS FROM `mokuai` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mokuai` WHERE `company_id` = '4' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `mokuai` WHERE `company_id` = '4' ORDER BY add_date desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000404s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001662s ]
+
+[ 2015-10-09T15:36:52+08:00 ] 127.0.0.1 /appserver1/index.php/Login/Company/companylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001664s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `company` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `company` ORDER BY addDate desc LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000385s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032882s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033171s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001575s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001814s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001702s ]
+
+[ 2015-10-09T15:36:54+08:00 ] 127.0.0.1 /appserver1/index.php/Login/mokuai/mokuailist/Id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001576s ]
+SQL: SHOW COLUMNS FROM `mokuai` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mokuai` WHERE `company_id` = '5' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `mokuai` WHERE `company_id` = '5' ORDER BY add_date desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `gongneng` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0043s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000423s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001464s ]
+
+[ 2015-10-09T15:37:33+08:00 ] 127.0.0.1 /appserver1/index.php/Login/mokuai/mokuailist/Id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+SQL: SHOW COLUMNS FROM `mokuai` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mokuai` WHERE `company_id` = '5' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `mokuai` WHERE `company_id` = '5' ORDER BY add_date desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `gongneng` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `gongneng` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000398s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001149s ]
+
+[ 2015-10-09T15:37:38+08:00 ] 127.0.0.1 /appserver1/index.php/Login/mokuai/mokuailist/Id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002934s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001220s ]
+SQL: SHOW COLUMNS FROM `mokuai` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mokuai` WHERE `company_id` = '4' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mokuai` WHERE `company_id` = '4' ORDER BY add_date desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000472s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000901s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001096s ]
+
+[ 2015-10-09T15:37:43+08:00 ] 127.0.0.1 /appserver1/index.php/Login/mokuai/mokuailist/Id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001149s ]
+SQL: SHOW COLUMNS FROM `mokuai` [ RunTime:0.0064s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mokuai` WHERE `company_id` = '1' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `mokuai` WHERE `company_id` = '1' ORDER BY add_date desc LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000405s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001792s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001213s ]
+
+[ 2015-10-09T15:42:26+08:00 ] 127.0.0.1 /appserver1/index.php/Login/Gongneng/gongnenglist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+SQL: SHOW COLUMNS FROM `gongneng` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gongneng` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `gongneng` ORDER BY addDate desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000430s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000999s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001108s ]
+
+[ 2015-10-09T16:18:16+08:00 ] 127.0.0.1 /appserver1/index.php/Login/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001391s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `user` ORDER BY date_create desc LIMIT 0,10   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `company` WHERE ( id = 5 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `company` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000428s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001155s ]
+
+[ 2015-10-09T16:18:58+08:00 ] 127.0.0.1 /appserver1/index.php/Login/user/usercreate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001234s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `company`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000434s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\appserver1\Application\Runtime\Cache\Login\4effa2c85b1a4c953a7c8380af749321.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001677s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001170s ]
+
+[ 2015-10-09T16:34:31+08:00 ] 127.0.0.1 /appserver1/index.php/Login/user/usercreate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `company`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000401s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\appserver1\Application\Runtime\Cache\Login\4effa2c85b1a4c953a7c8380af749321.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001128s ]
+
+[ 2015-10-09T16:36:13+08:00 ] 127.0.0.1 /appserver1/index.php/Login/User/useradd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0049s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'appserver.company_user_model' doesn't exist
+
+[ 2015-10-09T16:37:13+08:00 ] 127.0.0.1 /appserver1/index.php/Login/User/useradd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001127s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0074s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'appserver.company_user_model' doesn't exist
+
+[ 2015-10-09T16:43:35+08:00 ] 127.0.0.1 /appserver1/index.php/Login/User/useradd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001605s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0053s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'appserver.company_user_model' doesn't exist
+
+[ 2015-10-09T16:48:42+08:00 ] 127.0.0.1 /appserver1/index.php/Login/User/useradd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'appserver.company_user' doesn't exist
+
+[ 2015-10-09T16:49:40+08:00 ] 127.0.0.1 /appserver1/index.php/Login/User/useradd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001279s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0051s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'appserver.company_user' doesn't exist
+
+[ 2015-10-09T16:50:30+08:00 ] 127.0.0.1 /appserver1/index.php/Login/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001203s ]
+NOTIC: [8] Undefined index: xinxi D:\wamp\www\appserver1\Application\Login\Controller\LoginController.class.php 第 18 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000719s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001107s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001448s ]
+
+[ 2015-10-09T16:50:38+08:00 ] 127.0.0.1 /appserver1/index.php/Login/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002476s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'zhangjing' AND `password` = 'zhangjing' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2015-10-09T16:50:39+08:00 ] 127.0.0.1 /appserver1/index.php/Login/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002201s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` ORDER BY date_create desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `company` WHERE ( id = 5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `company` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000224s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000585s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001745s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002310s ]
+
+[ 2015-10-09T16:50:41+08:00 ] 127.0.0.1 /appserver1/index.php/Login/user/usercreate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002071s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `company`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000257s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000628s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\appserver1\Application\Runtime\Cache\Login\4effa2c85b1a4c953a7c8380af749321.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026831s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001970s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002056s ]
+
+[ 2015-10-09T16:51:17+08:00 ] 127.0.0.1 /appserver1/index.php/Login/User/useradd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001795s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0149s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'appserver.company_user' doesn't exist
+
+[ 2015-10-09T16:52:41+08:00 ] 127.0.0.1 /appserver1/index.php/Login/User/useradd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000888s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001467s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `companyuser` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined index: address D:\wamp\www\appserver1\Application\Login\Controller\UserController.class.php 第 62 行.
+SQL: INSERT INTO `user` (`name`,`phone`,`company_id`,`address`,`username`,`password`,`role`,`date_create`) VALUES ('123','','',NULL,'','','','2015-10-09') [ RunTime:0.1116s ]
+SQL: INSERT INTO `companyuser` (`name`,`phone`,`company_id`,`username`,`password`) VALUES ('123','','','','') [ RunTime:0.0563s ]
+
+[ 2015-10-09T16:52:41+08:00 ] 127.0.0.1 /appserver1/index.php/Login/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001400s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `user` ORDER BY date_create desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `company` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `company` WHERE ( id = 5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `company` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000607s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060422s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000978s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001315s ]
+

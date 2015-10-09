@@ -42,19 +42,8 @@
                 </header>
                 <!-- page start-->
                 <div class="panel-body">
-                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="__URL__/useradd">
-                        <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">名称</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="name" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">手机号</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="phone" class="form-control">
-                            </div>
-                        </div>
+                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="__URL__/companyuseradd">
+
                         <div class="form-group">
                             <label class="col-sm-2 col-sm-2 control-label">用户名</label>
                             <div class="col-sm-10">
@@ -68,29 +57,35 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">公司</label>
+                            <label class="col-sm-2 col-sm-2 control-label">姓名</label>
                             <div class="col-sm-10">
-                        <select type="text" class="form-control" id="role" name="company_id" placeholder="请
-输入权限">
-                            <option value="" selected>请选择公司</option>
-                            <volist name="list" id="vo">
-                                <option value="{$vo.id}">{$vo.name}</option>
-                            </volist>
-                        </select>
+                                <input type="text" name="name" class="form-control">
                             </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-sm-2 col-sm-2 control-label">权限</label>
-                    <div class="col-sm-10">
-                    <select type="text" class="form-control" id="role1" name="role" placeholder="请
-输入权限">
-                        <option value="" selected>请选择权限</option>
-                        <option value="微宝后台管理" >微宝后台管理</option>
-                        <option value="公司管理" >公司管理</option>
-                        <option value="公司老板" >公司老板</option>
-                    </select>
                         </div>
-                </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">电话</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="phone" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">会员</label>
+                            <div class="col-sm-10">
+                                <select type="text" class="form-control" id="huiyuanid" name="huiyuan_id">
+                                    <option value="" selected>请选择会员类型</option>
+                                    <volist name="list" id="vo">
+                                        <option value="{$vo.id}">{$vo.name}</option>
+                                    </volist>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">生日</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="shengri" class="form-control">
+                            </div>
+                        </div>
+
                         <button type="submit" id="s" class="btn btn-info">提交</button>
                         <a href="{:U('user/userlist')}" class="btn btn-danger">取消</a>
 

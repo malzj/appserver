@@ -11,7 +11,7 @@ use Think\Page;
  */
 class UserController extends Controller
 {
-    //ÓÃ»§ÁĞ±í
+    //ï¿½Ã»ï¿½ï¿½Ğ±ï¿½
     public function userlist(){
         $UserModel = M('User');
         $count = $UserModel->count();
@@ -28,7 +28,7 @@ class UserController extends Controller
         $this->display();
     }
 
-    //ÏÔÊ¾ÓÃ»§
+    //ï¿½ï¿½Ê¾ï¿½Ã»ï¿½
     public function usershow(){
         $id=$_REQUEST['id'];
         $Dao = M("User");
@@ -42,7 +42,7 @@ class UserController extends Controller
         $this->display();
     }
 
-    //Ìí¼ÓÓÃ»§
+    //ï¿½ï¿½ï¿½ï¿½Ã»ï¿½
     public function usercreate(){
         $list=M('Company')->select();
         $this->assign('list',$list);
@@ -53,6 +53,7 @@ class UserController extends Controller
         if(IS_POST){
             header("Content-Type:text/html; charset=utf-8");
             $UserModel = M('User');
+            $CompanyUserModel = M('Companyuser');
             $data = array();
             $data['name']=$_POST['name'];
 
@@ -65,7 +66,8 @@ class UserController extends Controller
             $data['date_create'] = date('Y-m-d',time());
 
             $id = $UserModel->add($data);
-            if($id){
+            $cuid = $CompanyUserModel->add($data);
+            if($id&&$cuid){
                 $this->redirect('User/userlist');
             }
         }

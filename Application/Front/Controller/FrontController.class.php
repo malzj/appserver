@@ -153,14 +153,35 @@ class FrontController extends Controller{
         $Page =new Page($count,10);
         $show = $Page->show();
         $list = $Dao->where($map)->order('add_date desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        var_dump($list);
+        exit();
+
         $this->assign('list',$list);// ��ֵ���ݼ�
         $this->assign('mokuai_id',$mokuai_id);// ��ֵ���ݼ�
         $this->assign('page',$show);// ��ֵ��ҳ���
         $this->display();
     }
 
+    public function companyusercreate(){
+        $this->display();
+    }
 
-    public function companyuserlist(){
-
+    public function companyuseradd(){
+        $user = $_SESSION['user'];
+        $Dao = M("Companyuser");
+        $companyuser = $Dao->where(array(company_id=>$user['company_id']))->order('id desc')->find();
+            var_dump($companyuser);
+            exit();
+//        if(IS_POST){
+//            header("Content-Type:text/html; charset;utf-8");
+//            $map = array();
+//            $map = $_POST;
+//            $map['huiyuanbianhao'] = $user['company_id'].time().$companyuser['id'];
+//            $map['add_date'] = date( 'Y-m-d',time());
+//            var_dump($map);
+//            exit();
+//
+//
+//        }
     }
 }
