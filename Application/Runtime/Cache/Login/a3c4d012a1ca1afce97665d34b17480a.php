@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
 
-    <title>编辑公司</title>
+    <title>微宝</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/appserver/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
@@ -149,7 +149,7 @@
                 </a>
                 <ul class="sub">
 
-                    <li><a id="a1" class="activeColor" href="<?php echo U('activity/activitylist');?>">用户列表</a></li>
+                    <li><a id="a1" class="activeColor" href="<?php echo U('User/userlist');?>">用户列表</a></li>
 
                 </ul>
                 <ul class="sub">
@@ -159,7 +159,7 @@
                 </ul>
                 <ul class="sub">
 
-                    <li><a id="a3" class="activeColor" href="<?php echo U('rule/rulelist');?>">功能</a></li>
+                    <li><a id="a3" class="activeColor" href="<?php echo U('Gongneng/gongnenglist');?>">功能</a></li>
 
                 </ul>
 
@@ -180,11 +180,11 @@
         <section class="wrapper site-min-height" >
             <section class="panel">
                 <header class="panel-heading">
-                    编辑公司
+                    编辑模块
                 </header>
                 <!-- page start-->
                 <div class="panel-body">
-                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="/appserver/index.php/Login/Company/companyupdate">
+                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="/appserver/index.php/Login/Mokuai/mokuaiupdate">
                         <div class="form-group">
                             <input type="hidden" name="id" value="<?php echo ($business["id"]); ?>">
                             <label class="col-sm-2 col-sm-2 control-label">名称</label>
@@ -193,13 +193,34 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">备注</label>
+                            <label class="col-sm-2 col-sm-2 control-label">功能</label>
                             <div class="col-sm-10">
-                                <input type="text" name="msg" class="form-control" value="<?php echo ($business["msg"]); ?>">
+                                <select type="text" class="form-control" id="role" name="gongneng_id" placeholder="请
+输入权限">
+
+                                    <?php if(is_array($list1)): $i = 0; $__LIST__ = $list1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>" <?php if($business[company_id]==$vo[id]){?>selected<?php }?>><?php echo ($vo["name"]); ?></option>
+                                        <!--<?php if($business["company_id"] == '<?php echo ($vo["id"]); ?>'): ?>selected<?php endif; ?>--><?php endforeach; endif; else: echo "" ;endif; ?>
+                                    <!--<?php if(is_array($list1)): $i = 0; $__LIST__ = $list1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>-->
+                                        <!--<option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option>-->
+                                    <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
+                                </select>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">开始时间</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="begin_date" class="form-control" value="<?php echo ($business["begin_date"]); ?>">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">结束时间</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="over_date" class="form-control" value="<?php echo ($business["over_date"]); ?>">
+                            </div>
+                        </div>
+
                         <button type="submit" id="s" class="btn btn-info">提交</button>
-                        <a href="<?php echo U('company/companylist');?>" class="btn btn-danger">取消</a>
+                        <a href="<?php echo U('mokuai/mokuailist','Id='.$business['company_id']);?>" class="btn btn-danger">取消</a>
 
                     </form>
 

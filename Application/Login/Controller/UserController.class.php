@@ -11,13 +11,6 @@ use Think\Page;
  */
 class UserController extends Controller
 {
-    public function index(){
-        $a[1] = 1;
-        $a[2] = 2;
-        $this->assign('a',$a);
-        $this->display();
-    }
-
     //用户列表
     public function userlist(){
         $UserModel = M('User');
@@ -25,6 +18,11 @@ class UserController extends Controller
         $Page = new Page($count,10);
         $show = $Page->show();
         $list = $UserModel->order('date_create desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        for($i=0;$i<count($list);$i++){
+            $id=$list[$i]['company_id'];
+            $business = M('Company') ->where('id = %d',$id)->find();
+            $list[$i]['company']=$business['name'];
+        }
         $this->assign('list',$list);
         $this->assign('page',$show);
         $this->display();
@@ -32,19 +30,22 @@ class UserController extends Controller
 
     //显示用户
     public function usershow(){
-        $companyId = $_REQUEST("companyId");
-        $userId = $_REQUEST("userId");
-        $map = array();
-        $map['id'] = $userId;
-        $map['company_id'] = $companyId;
-        $UserModel = M('User');
-        $userInfo = $UserModel->where($map)->select();
-        $this->assign('userInfo',$userInfo);
+        $id=$_REQUEST['id'];
+        $Dao = M("User");
+        $business = $Dao ->where('id = %d',$id)->find();
+        if (!$business) {
+            alert('error', L('THERE_IS_NO_BUSINESS_OPPORTUNITIES'),$_SERVER['HTTP_REFERER']);
+        }
+        $list=M('Company')->select();
+        $this->assign('list',$list);
+        $this->business = $business;
         $this->display();
     }
 
     //添加用户
     public function usercreate(){
+        $list=M('Company')->select();
+        $this->assign('list',$list);
         $this->display();
     }
 
@@ -54,7 +55,7 @@ class UserController extends Controller
             $UserModel = M('User');
             $data = array();
             $data['name']=$_POST['name'];
-            $data['city'] = $_POST['city'];
+
             $data['phone'] = $_POST['phone'];
             $data['company_id'] = $_POST['company_id'];
             $data['address'] = $_POST['address'];
@@ -65,22 +66,36 @@ class UserController extends Controller
 
             $id = $UserModel->add($data);
             if($id){
-                $this->success('操作成功！',U('User/userList'));
+                $this->redirect('User/userlist');
             }
         }
     }
 
-    //编辑用户
-    public function useredit(){
-        $companyId = $_REQUEST('companyId');
-        $userId = $_REQUEST('userId');
-        $this->display();
+    public  function userupdate(){
+        if(IS_POST){
+            $id=$_POST['id'];
+            header("Content-Type:text/html; charset=utf-8");
+            $Dao = M("User");
+            $data["name"] = $_POST["name"];
+            $data["username"] = $_POST["username"];
+            $data["password"] = $_POST["password"];
+            $data["company_id"] = $_POST["company_id"];
+            $data["address"] = $_POST["address"];
+            $data["phone"] = $_POST["phone"];
+            $data["role"] = $_POST["role"];
+            $Dao->where('id='.$id)->save($data);
+            if($id){
+                $this->redirect('user/userlist');
+            }
+        }
     }
-
-    //更新用户
-    public function userupdate(){
-        $companyId = $_REQUEST('companyId');
-        $userId = $_REQUEST('userId');
+    public  function userdelete(){
+        $id=$_REQUEST['id'];
+        $Dao = M("User");
+        $rusult= $Dao->where('id='.$id)->delete();
+        if($rusult){
+            $this->redirect('user/userlist');
+        }
         $this->display();
     }
 }

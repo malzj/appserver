@@ -19,6 +19,8 @@
     <!-- Custom styles for this template -->
     <link href="/appserver/Public/weixinapp/css/style.css" rel="stylesheet">
     <link href="/appserver/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
+    <link href="/appserver/Public/weixinapp/assets/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" />
+    <link href="/appserver/Public/weixinapp/assets/bootstrap-datetimepicker/css/datetimepicker.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
@@ -26,6 +28,7 @@
     <script src="/appserver/Public/js/respond.min.js"></script>
     <![endif]-->
 </head>
+<body>
 <section id="container" class="">
     <!--header start-->
     <!DOCTYPE html>
@@ -177,58 +180,61 @@
     <!--main content start-->
     <section id="main-content">
         <section class="wrapper site-min-height" >
-            <div class="row">
-                <div class="col-sm-12">
-                    <section class="panel">
-                        <!-- page start-->
-                        <header class="panel-heading">
-                            用户列表
-                        </header>
-                        <div class="panel-body">
-                            <a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="<?php echo U('user/usercreate');?>">创建用户</a>
-                            <table class="table table-striped" cellpadding=3 cellspacing=5>
-                                <thead>
-                                <tr>
-                                    <!--<th>#</th>-->
-                                    <th>编号</th>
-                                    <th>姓名</th>
-                                    <th>手机号</th>
-                                    <th>权限</th>
-                                    <th>公司</th>
-                                    <th>创建时间</th>
-                                    <th>操作</th>
-
-                                </tr>
-                                </thead>
-                                <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                                        <td><?php echo ($vo["id"]); ?></td>
-                                        <td><?php echo ($vo["name"]); ?></td>
-                                        <td><?php echo ($vo["phone"]); ?></td>
-                                        <td><?php echo ($vo["role"]); ?></td>
-                                        <td><?php echo ($vo["company"]); ?></td>
-                                        <td><?php echo ($vo["date_create"]); ?></td>
-
-
-                                        <!--<td> <a  href="<?php echo U('wininfo/wininfolist','actId='.$vo['id']);?>"><button class="btn btn-primary btn-xs">-->
-                                        <!--中奖人</button></a>-->
-                                        <!--<td> <a  href="<?php echo U('redenvelopelist/create','actId='.$vo['id']);?>"><button class="btn btn-primary btn-xs">-->
-                                        <!--奖品包</button></a>-->
-                                        <!--<td> <a  href="<?php echo U('rulelist/create','actId='.$vo['id']);?>"><button class="btn btn-primary btn-xs">-->
-                                        <!--规则</button></a>-->
-                                        <td> <a  href="<?php echo U('user/usershow','id='.$vo['id']);?>"><button class="btn btn-primary btn-xs">
-                                            <i class="fa fa-pencil"></i></button></a>
-                                            <a href="<?php echo U('user/userdelete','id='.$vo['id']);?>" onclick="return confirm('确定将此记录删除?')">
-                                                <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></a>
-                                        </td>
-                                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                                <tr>
-                                </tr>
-
-                            </table>
-                            <div class="dataTables_paginate paging_bootstrap pagination"><?php echo ($page); ?></div>
+            <section class="panel">
+                <header class="panel-heading">
+                    新建功能
+                </header>
+                <!-- page start-->
+                <div class="panel-body">
+                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="/appserver/index.php/Login/Mokuai/mokuaiadd">
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">名称</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="name" class="form-control">
+                                <input type="hidden" name="company_id" value="<?php echo ($cid); ?>" class="form-control">
+                            </div>
                         </div>
-                    </section>
-                </div></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">图片</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="img" class="form-control">
+                            </div>
+                            </div>
+
+                            <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">功能</label>
+                            <div class="col-sm-10">
+                                <select type="text" class="form-control" id="role" name="gongneng_id" placeholder="请
+输入权限">
+                                    <option value="" selected>请选择功能</option>
+                                    <?php if(is_array($list1)): $i = 0; $__LIST__ = $list1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">开始时间</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="begin_date" class="form_datetime form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">结束时间</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="over_date" class="form_datetime form-control">
+
+                            </div>
+                        </div>
+                        <button type="submit" id="s" class="btn btn-info">提交</button>
+                        <a href="<?php echo U('mokuai/mokuailist','Id='.$cid);?>" class="btn btn-danger">取消</a>
+
+                    </form>
+
+                </div>
+
+
+
+            </section>
+
             <!-- page end-->
         </section>
     </section>
@@ -262,6 +268,8 @@
 
 <script src="/appserver/Public/weixinapp/js/jquery.js"></script>
 <script src="/appserver/Public/weixinapp/js/bootstrap.min.js"></script>
+<script src="/appserver/Public/weixinapp/assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script src="/appserver/Public/weixinapp/assets/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
 <script class="include" type="text/javascript" src="/appserver/Public/weixinapp/js/jquery.dcjqaccordion.2.7.js"></script>
 <script src="/appserver/Public/weixinapp/js/jquery.scrollTo.min.js"></script>
 <script src="/appserver/Public/weixinapp/js/slidebars.min.js"></script>
@@ -270,7 +278,7 @@
 
 <!--common script for all pages-->
 <script src="/appserver/Public/weixinapp/js/common-scripts.js"></script>
-<body>
+
 
 </body>
 </html>
