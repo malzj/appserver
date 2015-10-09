@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
 
-    <title>编辑公司</title>
+    <title>微宝</title>
 
     <!-- Bootstrap core CSS -->
     <link href="__PUBLIC__/weixinapp/css/bootstrap.min.css" rel="stylesheet">
@@ -39,65 +39,33 @@
         <section class="wrapper site-min-height" >
             <section class="panel">
                 <header class="panel-heading">
-                    编辑用户
+                    编辑功能
                 </header>
                 <!-- page start-->
                 <div class="panel-body">
-                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="__URL__/mokuaiupdate">
-                        <input type="hidden" name="id" value="{$business.id}">
+                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="__URL__/gongnengupdate">
                         <div class="form-group">
+                            <input type="hidden" name="id" value="{$business.id}">
                             <label class="col-sm-2 col-sm-2 control-label">名称</label>
                             <div class="col-sm-10">
                                 <input type="text" name="name" class="form-control" value="{$business.name}">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">手机号</label>
+                            <label class="col-sm-2 col-sm-2 control-label">连接</label>
                             <div class="col-sm-10">
-                                <input type="text" name="phone" class="form-control" value="{$business.phone}">
+                                <input type="text" name="url" class="form-control" value="{$business.url}">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">用户名</label>
+                            <label class="col-sm-2 col-sm-2 control-label">备注</label>
                             <div class="col-sm-10">
-                                <input type="text" name="username" class="form-control" value="{$business.username}">
+                                <input type="text" name="msg" class="form-control" value="{$business.msg}">
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">密码</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="password" class="form-control" value="{$business.password}">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">公司</label>
-                            <div class="col-sm-10">
-                                <select type="text" class="form-control" id="role" name="company_id" placeholder="请
-输入权限">
 
-                                    <volist name="list" id="vo">
-                                        <option value="{$vo.id}" <?php if($business[company_id]==$vo[id]){?>selected<?php }?>>{$vo.name}</option>
-                                        <!--<if condition="$business.company_id eq '{$vo.id}'">selected</if>-->
-
-                                    </volist>
-                                </select>
-
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">权限</label>
-                            <div class="col-sm-10">
-                                <select type="text" class="form-control" id="role1" name="role" placeholder="请
-输入权限">
-
-                                    <option value="微宝后台管理" <if condition="$business.role eq '微宝后台管理'">selected</if> >微宝后台管理</option>
-                                    <option value="公司管理" <if condition="$business.role eq '公司管理'">selected</if>>公司管理</option>
-                                    <option value="公司老板" <if condition="$business.role eq '公司老板'">selected</if>>公司老板</option>
-                                </select>
-                            </div>
-                        </div>
                         <button type="submit" id="s" class="btn btn-info">提交</button>
-                        <a href="{:U('user/userlist')}" class="btn btn-danger">取消</a>
+                        <a href="{:U('company/companylist')}" class="btn btn-danger">取消</a>
 
                     </form>
 

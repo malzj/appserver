@@ -41,19 +41,17 @@
                     <section class="panel">
                         <!-- page start-->
                         <header class="panel-heading">
-                            用户列表
+                            功能列表
                         </header>
                         <div class="panel-body">
-                            <a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="{:U('user/usercreate')}">创建用户</a>
+                            <a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="{:U('gongneng/gongnengcreate')}">创建功能</a>
                             <table class="table table-striped" cellpadding=3 cellspacing=5>
                                 <thead>
                                 <tr>
                                     <!--<th>#</th>-->
                                     <th>编号</th>
-                                    <th>姓名</th>
-                                    <th>手机号</th>
-                                    <th>权限</th>
-                                    <th>公司</th>
+                                    <th>名称</th>
+                                    <th>备注</th>
                                     <th>创建时间</th>
                                     <th>操作</th>
 
@@ -63,21 +61,19 @@
                                     <tr>
                                         <td>{$vo.id}</td>
                                         <td>{$vo.name}</td>
-                                        <td>{$vo.phone}</td>
-                                        <td>{$vo.role}</td>
-                                        <td>{$vo.company}</td>
-                                        <td>{$vo.date_create}</td>
+                                        <td>{$vo.msg}</td>
+                                        <td>{$vo.adddate}</td>
 
 
                                         <!--<td> <a  href="{:U('wininfo/wininfolist','actId='.$vo['id'])}"><button class="btn btn-primary btn-xs">-->
-                                        <!--中奖人</button></a>-->
+                                            <!--中奖人</button></a>-->
                                         <!--<td> <a  href="{:U('redenvelopelist/create','actId='.$vo['id'])}"><button class="btn btn-primary btn-xs">-->
-                                        <!--奖品包</button></a>-->
+                                            <!--奖品包</button></a>-->
                                         <!--<td> <a  href="{:U('rulelist/create','actId='.$vo['id'])}"><button class="btn btn-primary btn-xs">-->
-                                        <!--规则</button></a>-->
-                                        <td> <a  href="{:U('user/usershow','id='.$vo['id'])}"><button class="btn btn-primary btn-xs">
+                                            <!--规则</button></a>-->
+                                        <td> <a  href="{:U('gongneng/gongnengshow','id='.$vo['id'])}"><button class="btn btn-primary btn-xs">
                                             <i class="fa fa-pencil"></i></button></a>
-                                            <a href="{:U('user/userdelete','id='.$vo['id'])}" onclick="return confirm('确定将此记录删除?')">
+                                            <a href="{:U('gongneng/gongnengdelete','id='.$vo['id'])}" onclick="return confirm('确定将此记录删除?')">
                                                 <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></a>
                                         </td>
                                     </tr>
