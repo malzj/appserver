@@ -19,13 +19,7 @@
     <!-- Custom styles for this template -->
     <link href="/appserver/Public/weixinapp/css/style.css" rel="stylesheet">
     <link href="/appserver/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
-    <link href="/appserver/Public/guihuabao/css/ownset.css" rel="stylesheet">
-    <style>
-        .c0{background-color: #3494ed;}
-        .c1{background-color:#03ae87;}
 
-       .xsreport li p{color:#fff;font-size:24px;text-align:center;padding:20px;word-wrap:break-word; word-break:normal;display:table-cell;vertical-align: middle;}
-    </style>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
     <script src="/appserver/Public/js/html5shiv.js"></script>
@@ -106,62 +100,119 @@
 </html>
     <!--header end-->
     <!--sidebar start-->
-    <!---->
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <title>Blank</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/appserver/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/appserver/Public/weixinapp/css/bootstrap-reset.css" rel="stylesheet">
+    <!--external css-->
+    <link href="/appserver/Public/weixinapp/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <!--right slidebar-->
+    <link href="/appserver/Public/weixinapp/css/slidebars.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/appserver/Public/weixinapp/css/style.css" rel="stylesheet">
+
+    <link href="/appserver/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
+    <style type="text/css">
+        ul.sidebar-menu li ul.sub li a.activeColor{ color:#fff;}
+    </style>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/appserver/Public/weixinapp/js/html5shiv.js"></script>
+    <script src="/appserver/Public/weixinapp/js/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+<body>
+<aside>
+    <div id="sidebar"  class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+
+
+            <!--multi level menu start-->
+            <li class="sub-menu">
+                <a href="javascript:;" class="dcjq-parent active">
+                    <i class="fa fa-sitemap "></i>
+                    <span>活动</span>
+                </a>
+                <ul class="sub">
+                    <li><a id="a1" class="activeColor" href="<?php echo U('Front/companyuserlist','mokuai_id='.$mokuai_id);?>">用户列表1</a></li>
+
+                </ul>
+                <ul class="sub">
+
+                    <li><a id="a2" class="activeColor" href="<?php echo U('Front/memberlist','mokuai_id='.$mokuai_id);?>">会员管理列表</a></li>
+
+                </ul>
+                <ul class="sub">
+
+                    <li><a id="a3" class="activeColor" href="<?php echo U('Gongneng/gongnenglist');?>">功能</a></li>
+
+                </ul>
+
+            </li>
+            <!--multi level menu end-->
+
+        </ul>
+        <!-- sidebar menu end-->
+    </div>
+</aside>
+<script src="/appserver/Public/weixinapp/js/jquery.js"></script>
+
+</body>
+</html>
     <!--sidebar end-->
     <!--main content start-->
-    <section id="main-content" style="margin-left:0;">
+    <section id="main-content">
         <section class="wrapper site-min-height" >
             <div class="row">
                 <div class="col-sm-12">
                     <section class="panel">
                         <!-- page start-->
                         <header class="panel-heading">
-                            功能列表
+                           会员管理列表
                         </header>
-                        <div class="panel-body" style="min-height:800px;">
-                            <!--<a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="<?php echo U('gongneng/gongnengcreate');?>">创建功能</a>-->
-                            <ul class="xsreport">
-                                <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a href="<?php echo ($vo["url"]); ?>/mokuai_id/<?php echo ($vo["id"]); ?>" target="view_window" style="width:150px;height:150px;display:table;border-radius:150px;" class="c<?php echo ($i%2); ?>"><p>我是好人</p></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
-                            </ul>
-                            <!--<table class="table table-striped" cellpadding=3 cellspacing=5>-->
-                                <!--<thead>-->
-                                <!--<tr>-->
-                                    <!--&lt;!&ndash;<th>#</th>&ndash;&gt;-->
-                                    <!--<th>编号</th>-->
-                                    <!--<th>名称</th>-->
-                                    <!--<th>备注</th>-->
-                                    <!--<th>创建时间</th>-->
-                                    <!--<th>操作</th>-->
+                        <div class="panel-body">
+                            <a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="<?php echo U('Front/membercreate','mokuai_id='.$mokuai_id);?>">创建管理</a>
+                            <table class="table table-striped" cellpadding=3 cellspacing=5>
+                                <thead>
+                                <tr>
+                                    <!--<th>#</th>-->
+                                    <th>编号</th>
+                                    <th>名称</th>
+                                    <th>积分等级</th>
+                                    <th>创建时间</th>
+                                    <th>操作</th>
 
-                                <!--</tr>-->
-                                <!--</thead>-->
-                                <!--<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>-->
-                                    <!--<tr>-->
-                                        <!--<td><?php echo ($vo["id"]); ?></td>-->
-                                        <!--<td><?php echo ($vo["name"]); ?></td>-->
-                                        <!--<td><?php echo ($vo["url"]); ?></td>-->
-                                        <!--<td><?php echo ($vo["cid"]); ?></td>-->
-                                        <!--<td><?php echo ($vo["adddate"]); ?></td>-->
+                                </tr>
+                                </thead>
+                                <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+                                        <td><?php echo ($vo["id"]); ?></td>
+                                        <td><?php echo ($vo["name"]); ?></td>
+                                        <td><?php echo ($vo["jifen"]); ?></td>
+                                        <td><?php echo ($vo["add_date"]); ?></td>
+                                        <td> <a  href="<?php echo U('Front/membershow','id='.$vo['id']);?>"><button class="btn btn-primary btn-xs">
+                                            <i class="fa fa-pencil"></i></button></a>
+                                            <a href="<?php echo U('Front/memberdelete','id='.$vo['id']);?>" onclick="return confirm('确定将此记录删除?')">
+                                                <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></a>
+                                        </td>
+                                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                                <tr>
+                                </tr>
 
-
-                                        <!--&lt;!&ndash;<td> <a  href="<?php echo U('wininfo/wininfolist','actId='.$vo['id']);?>"><button class="btn btn-primary btn-xs">&ndash;&gt;-->
-                                        <!--&lt;!&ndash;中奖人</button></a>&ndash;&gt;-->
-                                        <!--&lt;!&ndash;<td> <a  href="<?php echo U('redenvelopelist/create','actId='.$vo['id']);?>"><button class="btn btn-primary btn-xs">&ndash;&gt;-->
-                                        <!--&lt;!&ndash;奖品包</button></a>&ndash;&gt;-->
-                                        <!--&lt;!&ndash;<td> <a  href="<?php echo U('rulelist/create','actId='.$vo['id']);?>"><button class="btn btn-primary btn-xs">&ndash;&gt;-->
-                                        <!--&lt;!&ndash;规则</button></a>&ndash;&gt;-->
-                                        <!--<td> <a  href="<?php echo U('gongneng/gongnengshow','id='.$vo['id']);?>"><button class="btn btn-primary btn-xs">-->
-                                            <!--<i class="fa fa-pencil"></i></button></a>-->
-                                            <!--<a href="<?php echo U('gongneng/gongnengdelete','id='.$vo['id']);?>" onclick="return confirm('确定将此记录删除?')">-->
-                                                <!--<button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></a>-->
-                                        <!--</td>-->
-                                    <!--</tr>-->
-                                <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
-                                <!--<tr>-->
-                                <!--</tr>-->
-
-                            <!--</table>-->
-                            <!--<div class="dataTables_paginate paging_bootstrap pagination"><?php echo ($page); ?></div>-->
+                            </table>
+                            <div class="dataTables_paginate paging_bootstrap pagination"><?php echo ($page); ?></div>
                         </div>
                     </section>
                 </div></div>

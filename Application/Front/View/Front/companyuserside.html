@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <title>Blank</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="__PUBLIC__/weixinapp/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/weixinapp/css/bootstrap-reset.css" rel="stylesheet">
+    <!--external css-->
+    <link href="__PUBLIC__/weixinapp/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <!--right slidebar-->
+    <link href="__PUBLIC__/weixinapp/css/slidebars.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="__PUBLIC__/weixinapp/css/style.css" rel="stylesheet">
+
+    <link href="__PUBLIC__/weixinapp/css/style-responsive.css" rel="stylesheet" />
+    <style type="text/css">
+        ul.sidebar-menu li ul.sub li a.activeColor{ color:#fff;}
+    </style>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+    <!--[if lt IE 9]>
+    <script src="__PUBLIC__/weixinapp/js/html5shiv.js"></script>
+    <script src="__PUBLIC__/weixinapp/js/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+<body>
+<aside>
+    <div id="sidebar"  class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+
+
+            <!--multi level menu start-->
+            <li class="sub-menu">
+                <a href="javascript:;" class="dcjq-parent active">
+                    <i class="fa fa-sitemap "></i>
+                    <span>活动</span>
+                </a>
+                <ul class="sub">
+                    <li><a id="a1" class="activeColor" href="{:U('Front/companyuserlist','mokuai_id='.$mokuai_id)}">用户列表1</a></li>
+
+                </ul>
+                <ul class="sub">
+
+                    <li><a id="a2" class="activeColor" href="{:U('Front/memberlist','mokuai_id='.$mokuai_id)}">会员管理列表</a></li>
+
+                </ul>
+                <ul class="sub">
+
+                    <li><a id="a3" class="activeColor" href="{:U('Gongneng/gongnenglist')}">功能</a></li>
+
+                </ul>
+
+            </li>
+            <!--multi level menu end-->
+
+        </ul>
+        <!-- sidebar menu end-->
+    </div>
+</aside>
+<script src="__PUBLIC__/weixinapp/js/jquery.js"></script>
+
+</body>
+</html>
