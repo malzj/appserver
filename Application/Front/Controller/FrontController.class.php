@@ -59,4 +59,7 @@ class FrontController extends Controller{
         $this->assign('page',$show);// ��ֵ��ҳ���
     }
 
+    public function companyuserlist(){
+
+    }
 }

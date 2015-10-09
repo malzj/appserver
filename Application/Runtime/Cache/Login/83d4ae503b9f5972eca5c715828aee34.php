@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
 
-    <title>微宝</title>
+    <title>编辑公司</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/appserver1/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
@@ -19,8 +19,6 @@
     <!-- Custom styles for this template -->
     <link href="/appserver1/Public/weixinapp/css/style.css" rel="stylesheet">
     <link href="/appserver1/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
-    <link href="/appserver1/Public/weixinapp/assets/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" />
-    <link href="/appserver1/Public/weixinapp/assets/bootstrap-datetimepicker/css/datetimepicker.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
@@ -182,50 +180,26 @@
         <section class="wrapper site-min-height" >
             <section class="panel">
                 <header class="panel-heading">
-                    新建功能
+                    编辑公司
                 </header>
                 <!-- page start-->
                 <div class="panel-body">
-                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="/appserver1/index.php/Login/Mokuai/mokuaiadd">
+                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="/appserver1/index.php/Login/Company/companyupdate">
                         <div class="form-group">
+                            <input type="hidden" name="id" value="<?php echo ($business["id"]); ?>">
                             <label class="col-sm-2 col-sm-2 control-label">名称</label>
                             <div class="col-sm-10">
-                                <input type="text" name="name" class="form-control">
-                                <input type="hidden" name="company_id" value="<?php echo ($cid); ?>" class="form-control">
+                                <input type="text" name="name" class="form-control" value="<?php echo ($business["name"]); ?>">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">图片</label>
+                            <label class="col-sm-2 col-sm-2 control-label">备注</label>
                             <div class="col-sm-10">
-                                <input type="text" name="img" class="form-control">
-                            </div>
-                            </div>
-
-                            <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">功能</label>
-                            <div class="col-sm-10">
-                                <select type="text" class="form-control" id="role" name="gongneng_id" placeholder="请
-输入权限">
-                                    <option value="" selected>请选择功能</option>
-                                    <?php if(is_array($list1)): $i = 0; $__LIST__ = $list1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">开始时间</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="begin_date" class="form_datetime form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">结束时间</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="over_date" class="form_datetime form-control">
-
+                                <input type="text" name="msg" class="form-control" value="<?php echo ($business["msg"]); ?>">
                             </div>
                         </div>
                         <button type="submit" id="s" class="btn btn-info">提交</button>
-                        <a href="<?php echo U('mokuai/mokuailist','Id='.$cid);?>" class="btn btn-danger">取消</a>
+                        <a href="<?php echo U('company/companylist');?>" class="btn btn-danger">取消</a>
 
                     </form>
 
@@ -268,8 +242,6 @@
 
 <script src="/appserver1/Public/weixinapp/js/jquery.js"></script>
 <script src="/appserver1/Public/weixinapp/js/bootstrap.min.js"></script>
-<script src="/appserver1/Public/weixinapp/assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
-<script src="/appserver1/Public/weixinapp/assets/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
 <script class="include" type="text/javascript" src="/appserver1/Public/weixinapp/js/jquery.dcjqaccordion.2.7.js"></script>
 <script src="/appserver1/Public/weixinapp/js/jquery.scrollTo.min.js"></script>
 <script src="/appserver1/Public/weixinapp/js/slidebars.min.js"></script>
