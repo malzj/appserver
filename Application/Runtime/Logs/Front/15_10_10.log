@@ -132,3 +132,12 @@ SQL: SHOW COLUMNS FROM `companyuser` [ RunTime:0.0044s ]
 SQL: SELECT COUNT(*) AS tp_count FROM `companyuser` LIMIT 1   [ RunTime:0.0017s ]
 SQL: SELECT * FROM `companyuser` WHERE `mokuai_id` = null AND `company_id` = '5' ORDER BY add_date desc LIMIT 0,10   [ RunTime:0.0008s ]
 
+[ 2015-10-10T10:38:03+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/companyuserlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+NOTIC: [8] Undefined index: mokuai_id D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 146 行.
+
