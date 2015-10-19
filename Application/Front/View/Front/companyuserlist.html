@@ -27,11 +27,10 @@
     <![endif]-->
 </head>
 <section id="container" class="">
-    <!--header start-->
     <include file="./Front:loginheader" />
     <!--header end-->
     <!--sidebar start-->
-    <include file="./Front:loginside" />
+    <include file="./Front:companyuserside" />
     <!--sidebar end-->
     <!--main content start-->
     <section id="main-content">
@@ -44,7 +43,7 @@
                             公司用户列表
                         </header>
                         <div class="panel-body">
-                            <a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="{:U('front/companyusercreate')}">创建用户</a>
+                            <a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="{:U('front/companyusercreate','mokuai_id='.$mokuai_id)}">创建用户</a>
                             <table class="table table-striped" cellpadding=3 cellspacing=5>
                                 <thead>
                                 <tr>
@@ -52,8 +51,8 @@
                                     <th>编号</th>
                                     <th>姓名</th>
                                     <th>手机号</th>
-                                    <th>权限</th>
-                                    <th>公司</th>
+                                    <th>会员</th>
+                                    <th>生日</th>
                                     <th>创建时间</th>
                                     <th>操作</th>
 
@@ -64,9 +63,9 @@
                                         <td>{$vo.id}</td>
                                         <td>{$vo.name}</td>
                                         <td>{$vo.phone}</td>
-                                        <td>{$vo.role}</td>
-                                        <td>{$vo.company}</td>
-                                        <td>{$vo.date_create}</td>
+                                        <td>{$vo.huiyuanname}</td>
+                                        <td>{$vo.shengri}</td>
+                                        <td>{$vo.add_date}</td>
 
 
                                         <!--<td> <a  href="{:U('wininfo/wininfolist','actId='.$vo['id'])}"><button class="btn btn-primary btn-xs">-->
@@ -75,9 +74,9 @@
                                         <!--奖品包</button></a>-->
                                         <!--<td> <a  href="{:U('rulelist/create','actId='.$vo['id'])}"><button class="btn btn-primary btn-xs">-->
                                         <!--规则</button></a>-->
-                                        <td> <a  href="{:U('user/usershow','id='.$vo['id'])}"><button class="btn btn-primary btn-xs">
+                                        <td> <a  href="{:U('Front/companyuseredit',array('id'=>$vo['id'],'mokuai_id'=>$mokuai_id))}"><button class="btn btn-primary btn-xs">
                                             <i class="fa fa-pencil"></i></button></a>
-                                            <a href="{:U('user/userdelete','id='.$vo['id'])}" onclick="return confirm('确定将此记录删除?')">
+                                            <a href="{:U('Front/companyuserdelete',array('id'=>$vo['id'],'mokuai_id'=>$mokuai_id))}" onclick="return confirm('确定将此记录删除?')">
                                                 <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></a>
                                         </td>
                                     </tr>

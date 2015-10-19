@@ -183,7 +183,7 @@
                 <!-- page start-->
                 <div class="panel-body">
                     <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="/appserver1/index.php/Front/Front/companyuseradd">
-
+                        <input type="hidden" name="mokuai_id" value="<?php echo ($mokuai_id); ?>" />
                         <div class="form-group">
                             <label class="col-sm-2 col-sm-2 control-label">用户名</label>
                             <div class="col-sm-10">
@@ -209,11 +209,11 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">会员</label>
+                            <label class="col-sm-2 col-sm-2 control-label">模块</label>
                             <div class="col-sm-10">
-                                <select type="text" class="form-control" id="huiyuanid" name="huiyuan_id">
-                                    <option value="" selected>请选择会员类型</option>
-                                    <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                                <select type="text" class="form-control" id="mokuaiid" name="mokuai_id">
+                                    <option value="" selected>请选择模块</option>
+                                    <?php if(is_array($mokuailist)): $i = 0; $__LIST__ = $mokuailist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
                                 </select>
                             </div>
                         </div>
@@ -221,6 +221,12 @@
                             <label class="col-sm-2 col-sm-2 control-label">生日</label>
                             <div class="col-sm-10">
                                 <input type="text" name="shengri" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">积分</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="jifen" class="form-control">
                             </div>
                         </div>
 

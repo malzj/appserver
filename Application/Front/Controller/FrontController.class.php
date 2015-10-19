@@ -48,13 +48,14 @@ class FrontController extends Controller{
         $date =date( 'Y-m-d',time());
         $Dao=M('Mokuai');
         $map=array();
-        $map['begin_date']=array('egt',$date);
-        $map['over_date']=array('elt',$date);
+        $map['begin_date']=array('elt',$date);
+        $map['over_date']=array('egt',$date);
         $map['company_id']=$user['company_id'];
         $count = $Dao->count();
         $Page =new Page($count,10);
         $show = $Page->show();
         $list = $Dao->where($map)->order('add_date desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+
         for($i=0;$i<count($list);$i++){
             $id=$list[$i]['gongneng_id'];
             $business = M('Gongneng') ->where('id = %d',$id)->find();
@@ -141,11 +142,14 @@ class FrontController extends Controller{
 //        $this->display();
     }
 
+//    超
+//    用户列表
     public function companyuserlist(){
         $user=$_SESSION['user'];
         $mokuai_id=$_REQUEST['mokuai_id'];
         $date =date( 'Y-m-d',time());
         $Dao=M('Companyuser');
+        $MemberModel = M('Member');
         $map=array();
         $map['mokuai_id']=$mokuai_id;
         $map['company_id']=$user['company_id'];
@@ -153,35 +157,117 @@ class FrontController extends Controller{
         $Page =new Page($count,10);
         $show = $Page->show();
         $list = $Dao->where($map)->order('add_date desc')->limit($Page->firstRow.','.$Page->listRows)->select();
-        var_dump($list);
-        exit();
-
+        foreach($list as $key=>$value ){
+            $info = $MemberModel->where('id='.$value['huiyuan_id'])->find();
+            $list[$key]['huiyuanname']=$info['name'];
+        }
+//        var_dump($list);
+//        exit;
         $this->assign('list',$list);// ��ֵ���ݼ�
         $this->assign('mokuai_id',$mokuai_id);// ��ֵ���ݼ�
         $this->assign('page',$show);// ��ֵ��ҳ���
         $this->display();
     }
-
+//新增用户
     public function companyusercreate(){
+        $user = $_SESSION['user'];
+        $mokuai_id=$_REQUEST['mokuai_id'];
+        $MokuaiModel = M("Mokuai");
+        $map=array();
+        $map['company_id']=$user['company_id'];
+        $mokuailist = $MokuaiModel->where($map)->select();
+        $this->assign('mokuailist',$mokuailist);
+        $this->assign('mokuai_id',$mokuai_id);
         $this->display();
     }
-
+//用户保存
     public function companyuseradd(){
         $user = $_SESSION['user'];
         $Dao = M("Companyuser");
+        $MeberModel = M("Member");
         $companyuser = $Dao->where(array(company_id=>$user['company_id']))->order('id desc')->find();
-            var_dump($companyuser);
-            exit();
-//        if(IS_POST){
-//            header("Content-Type:text/html; charset;utf-8");
-//            $map = array();
-//            $map = $_POST;
-//            $map['huiyuanbianhao'] = $user['company_id'].time().$companyuser['id'];
-//            $map['add_date'] = date( 'Y-m-d',time());
-//            var_dump($map);
+        $sql=array();
+        $sql['jifen']=array('elt',$_POST['jifen']);
+        $sql['mokuai_id']=$_POST['mokuai_id'];
+        $huiyuan = $MeberModel->where($sql)->order('jifen desc')->find();
+//            var_dump($huiyuan);
 //            exit();
-//
-//
-//        }
+        if(IS_POST){
+            header("Content-Type:text/html; charset;utf-8");
+            $map = array();
+            $map = $_POST;
+            $map['company_id'] = $user['company_id'];
+            $map['huiyuanbianhao'] = $user['company_id'].time().($companyuser['id']+1);
+            $map['add_date'] = date( 'Y-m-d',time());
+            $map['zongjifen'] = $_POST['jifen'];
+            $map['huiyuan_id'] = $huiyuan['id'];
+            $id = $Dao->add($map);
+            if($id){
+                $this->redirect("front/companyuserlist",'mokuai_id='.$_POST['mokuai_id']);
+            }
+
+        }
     }
+//    用户删除
+    public function companyuserdelete(){
+        $id = $_REQUEST['id'];
+        $mokuai_id = $_REQUEST['mokuai_id'];
+        $Dao = M('Companyuser');
+        $result = $Dao->where('id='.$id)->delete();
+        if($result){
+            $this->redirect('Front/companyuserlist','mokuai_id='.$mokuai_id);
+        }
+        $this->display();
+    }
+//用户编辑
+    public function companyuseredit(){
+        $user = $_SESSION['user'];
+        $id = $_REQUEST['id'];
+        $company_id = $user['company_id'];
+        $mokuai_id = $_REQUEST['mokuai_id'];
+        $Dao = M('Companyuser');
+        $MokuaiModel = M("Mokuai");
+        $mokuailist=$MokuaiModel->where(array('company_id'=>$company_id))->select();
+        $map = array();
+        $map['id']=$id;
+        $map['mokuai_id']=$mokuai_id;
+        $companyuserinfo = $Dao->where($map)->find();
+        $this->assign('companyuserinfo',$companyuserinfo);
+        $this->assign('mokuailist',$mokuailist);
+        $this->assign('mokuai_id',$mokuai_id);
+        $this->display();
+    }
+//    用户更新
+    public function companyuserupdate(){
+        $user = $_SESSION['user'];
+        if(IS_POST){
+            $id=$_POST['id'];
+            header("Content-Type:text/html; charset=utf-8");
+            $Dao = M("Companyuser");
+            $MeberModel = M("Member");
+            $data["name"] = $_POST["name"];
+            $data["username"] = $_POST["username"];
+            $data["password"] = $_POST["password"];
+            $data["company_id"] = $user["company_id"];
+            $data["address"] = $_POST["address"];
+            $data["phone"] = $_POST["phone"];
+            $data["shenri"] = $_POST["shenri"];
+            $data["mokuai_id"]=$_POST["mokuai_id"];
+            $data["jifen"]=$_POST['jifen'];
+            //计算总积分
+            $cuinfo=$Dao->where('id='.$id)->find();
+            $zongjifen = $_POST['jifen']-$cuinfo['jifen']+$cuinfo['zongjifen'];
+            $sql=array();
+            $sql['jifen']=array('elt',$zongjifen);
+            $sql['mokuai_id']=$_POST["mokuai_id"];
+            $huiyuan = $MeberModel->where($sql)->order('jifen desc')->find();
+            $data['zongjifen']=$zongjifen;
+            $data['huiyuan_id']=$huiyuan['id'];
+            $Dao->where('id='.$id)->save($data);
+            if($id){
+                $this->redirect('Front/companyuserlist','mokuai_id='.$_POST["mokuai_id"]);
+            }
+        }
+    }
+//    超
 }

@@ -26,8 +26,8 @@
     <script src="/appserver1/Public/js/respond.min.js"></script>
     <![endif]-->
 </head>
+<body>
 <section id="container" class="">
-    <!--header start-->
     <!DOCTYPE html>
 <html>
 <head>
@@ -176,46 +176,72 @@
     <!--main content start-->
     <section id="main-content">
         <section class="wrapper site-min-height" >
-            <div class="row">
-                <div class="col-sm-12">
-                    <section class="panel">
-                        <!-- page start-->
-                        <header class="panel-heading">
-                           会员管理列表
-                        </header>
-                        <div class="panel-body">
-                            <a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="<?php echo U('Front/membercreate','mokuai_id='.$mokuai_id);?>">创建管理</a>
-                            <table class="table table-striped" cellpadding=3 cellspacing=5>
-                                <thead>
-                                <tr>
-                                    <!--<th>#</th>-->
-                                    <th>编号</th>
-                                    <th>名称</th>
-                                    <th>积分等级</th>
-                                    <th>创建时间</th>
-                                    <th>操作</th>
-
-                                </tr>
-                                </thead>
-                                <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                                        <td><?php echo ($vo["id"]); ?></td>
-                                        <td><?php echo ($vo["name"]); ?></td>
-                                        <td><?php echo ($vo["jifen"]); ?></td>
-                                        <td><?php echo ($vo["add_date"]); ?></td>
-                                        <td> <a  href="<?php echo U('Front/membershow','id='.$vo['id']);?>"><button class="btn btn-primary btn-xs">
-                                            <i class="fa fa-pencil"></i></button></a>
-                                            <a href="<?php echo U('Front/memberdelete','id='.$vo['id']);?>" onclick="return confirm('确定将此记录删除?')">
-                                                <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></a>
-                                        </td>
-                                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                                <tr>
-                                </tr>
-
-                            </table>
-                            <div class="dataTables_paginate paging_bootstrap pagination"><?php echo ($page); ?></div>
+            <section class="panel">
+                <header class="panel-heading">
+                    新建用户
+                </header>
+                <!-- page start-->
+                <div class="panel-body">
+                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="/appserver1/index.php/Front/Front/companyuserupdate">
+                        <input type="hidden" name="id" value="<?php echo ($companyuserinfo["id"]); ?>" />
+                        <input type="hidden" name="mokuai_id" value="<?php echo ($mokuai_id); ?>" />
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">用户名</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="username" class="form-control" value="<?php echo ($companyuserinfo["username"]); ?>">
+                            </div>
                         </div>
-                    </section>
-                </div></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">密码</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="password" class="form-control" value="<?php echo ($companyuserinfo["password"]); ?>">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">姓名</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="name" class="form-control" value="<?php echo ($companyuserinfo["name"]); ?>">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">电话</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="phone" class="form-control" value="<?php echo ($companyuserinfo["phone"]); ?>">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">模块</label>
+                            <div class="col-sm-10">
+                                <select type="text" class="form-control" id="mokuaiid" name="mokuai_id">
+                                    <option value="" selected>请选择模块</option>
+                                    <?php if(is_array($mokuailist)): $i = 0; $__LIST__ = $mokuailist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>" <?php if($companyuserinfo['mokuai_id']==$vo['id']){?>selected<?php }?>><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">生日</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="shengri" class="form-control" value="<?php echo ($companyuserinfo["shengri"]); ?>">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">积分</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="jifen" class="form-control" value="<?php echo ($companyuserinfo["jifen"]); ?>">
+                            </div>
+                        </div>
+
+                        <button type="submit" id="s" class="btn btn-info">提交</button>
+                        <a href="<?php echo U('Front/companyuserlist','mokuai_id='.$mokuai_id);?>" class="btn btn-danger">取消</a>
+
+                    </form>
+
+                </div>
+
+
+
+            </section>
+
             <!-- page end-->
         </section>
     </section>
@@ -257,7 +283,7 @@
 
 <!--common script for all pages-->
 <script src="/appserver1/Public/weixinapp/js/common-scripts.js"></script>
-<body>
+
 
 </body>
 </html>

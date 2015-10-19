@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
 
-    <title>微宝</title>
+    <title>编辑公司</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/appserver1/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
@@ -26,6 +26,7 @@
     <script src="/appserver1/Public/js/respond.min.js"></script>
     <![endif]-->
 </head>
+<body>
 <section id="container" class="">
     <!--header start-->
     <!DOCTYPE html>
@@ -62,7 +63,7 @@
         <div data-original-title="左侧菜单" data-placement="right" class="fa fa-bars tooltips"></div>
     </div>
     <!--logo start-->
-    <a href="index.html" class="logo" >WB<span>admin</span></a>
+    <a href="index.html" class="logo" >vk<span>admin</span></a>
     <!--logo end-->
     <div class="nav notify-row" id="top_menu">
         <!--  notification start -->
@@ -147,12 +148,13 @@
                     <span>活动</span>
                 </a>
                 <ul class="sub">
-                    <li><a id="a1" class="activeColor" href="<?php echo U('Front/companyuserlist','mokuai_id='.$mokuai_id);?>">用户列表1</a></li>
+
+                    <li><a id="a1" class="activeColor" href="<?php echo U('User/userlist');?>">用户列表</a></li>
 
                 </ul>
                 <ul class="sub">
 
-                    <li><a id="a2" class="activeColor" href="<?php echo U('Front/memberlist','mokuai_id='.$mokuai_id);?>">会员管理列表</a></li>
+                    <li><a id="a2" class="activeColor" href="<?php echo U('Company/companylist');?>">公司列表</a></li>
 
                 </ul>
                 <ul class="sub">
@@ -176,46 +178,73 @@
     <!--main content start-->
     <section id="main-content">
         <section class="wrapper site-min-height" >
-            <div class="row">
-                <div class="col-sm-12">
-                    <section class="panel">
-                        <!-- page start-->
-                        <header class="panel-heading">
-                           会员管理列表
-                        </header>
-                        <div class="panel-body">
-                            <a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="<?php echo U('Front/membercreate','mokuai_id='.$mokuai_id);?>">创建管理</a>
-                            <table class="table table-striped" cellpadding=3 cellspacing=5>
-                                <thead>
-                                <tr>
-                                    <!--<th>#</th>-->
-                                    <th>编号</th>
-                                    <th>名称</th>
-                                    <th>积分等级</th>
-                                    <th>创建时间</th>
-                                    <th>操作</th>
-
-                                </tr>
-                                </thead>
-                                <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                                        <td><?php echo ($vo["id"]); ?></td>
-                                        <td><?php echo ($vo["name"]); ?></td>
-                                        <td><?php echo ($vo["jifen"]); ?></td>
-                                        <td><?php echo ($vo["add_date"]); ?></td>
-                                        <td> <a  href="<?php echo U('Front/membershow','id='.$vo['id']);?>"><button class="btn btn-primary btn-xs">
-                                            <i class="fa fa-pencil"></i></button></a>
-                                            <a href="<?php echo U('Front/memberdelete','id='.$vo['id']);?>" onclick="return confirm('确定将此记录删除?')">
-                                                <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></a>
-                                        </td>
-                                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                                <tr>
-                                </tr>
-
-                            </table>
-                            <div class="dataTables_paginate paging_bootstrap pagination"><?php echo ($page); ?></div>
+            <section class="panel">
+                <header class="panel-heading">
+                    编辑用户
+                </header>
+                <!-- page start-->
+                <div class="panel-body">
+                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="/appserver1/index.php/Login/User/mokuaiupdate">
+                        <input type="hidden" name="id" value="<?php echo ($business["id"]); ?>">
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">名称</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="name" class="form-control" value="<?php echo ($business["name"]); ?>">
+                            </div>
                         </div>
-                    </section>
-                </div></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">手机号</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="phone" class="form-control" value="<?php echo ($business["phone"]); ?>">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">用户名</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="username" class="form-control" value="<?php echo ($business["username"]); ?>">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">密码</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="password" class="form-control" value="<?php echo ($business["password"]); ?>">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">公司</label>
+                            <div class="col-sm-10">
+                                <select type="text" class="form-control" id="role" name="company_id" placeholder="请
+输入权限">
+
+                                    <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>" <?php if($business[company_id]==$vo[id]){?>selected<?php }?>><?php echo ($vo["name"]); ?></option>
+                                        <!--<?php if($business["company_id"] == '<?php echo ($vo["id"]); ?>'): ?>selected<?php endif; ?>--><?php endforeach; endif; else: echo "" ;endif; ?>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">权限</label>
+                            <div class="col-sm-10">
+                                <select type="text" class="form-control" id="role1" name="role" placeholder="请
+输入权限">
+
+                                    <option value="微宝后台管理" <?php if($business["role"] == '微宝后台管理'): ?>selected<?php endif; ?> >微宝后台管理</option>
+                                    <option value="公司管理" <?php if($business["role"] == '公司管理'): ?>selected<?php endif; ?>>公司管理</option>
+                                    <option value="公司老板" <?php if($business["role"] == '公司老板'): ?>selected<?php endif; ?>>公司老板</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" id="s" class="btn btn-info">提交</button>
+                        <a href="<?php echo U('user/userlist');?>" class="btn btn-danger">取消</a>
+
+                    </form>
+
+                </div>
+
+
+
+            </section>
+
             <!-- page end-->
         </section>
     </section>
@@ -257,7 +286,7 @@
 
 <!--common script for all pages-->
 <script src="/appserver1/Public/weixinapp/js/common-scripts.js"></script>
-<body>
+
 
 </body>
 </html>
