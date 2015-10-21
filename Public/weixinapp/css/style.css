@@ -5676,3 +5676,11 @@ a.guest-on i {
     margin-right: 10px;
 }
 .imgUrl{ width: 68px;}
+
+
+/*相册页面*/
+.albumlist{}
+.album{float:left;}
+.album_pic{display:block;width:100%;padding:10px;position:relative;}
+.album_pic img{width:100%;}
+.album span{text-align:center;display:inline-block;width:100%;margin:0 auto;}

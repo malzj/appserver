@@ -28,10 +28,10 @@
 </head>
 <section id="container" class="">
     <!--header start-->
-    <include file="./Front:loginheader" />
+    <include file="loginheader" />
     <!--header end-->
     <!--sidebar start-->
-    <include file="./Front:loginside" />
+    <include file="albumside" />
     <!--sidebar end-->
     <!--main content start-->
     <section id="main-content">
@@ -40,52 +40,23 @@
                 <div class="col-sm-12">
                     <section class="panel">
                         <!-- page start-->
-                        <header class="panel-heading">
-                            公司用户列表
+                        <header class="panel-heading clearfix">
+                            图片列表
+                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="{:U('Front/albumDelete',array('id'=>$albumId,'mokuai_id'=>$mokuai_id))}" onclick="return confirm('确定要删除吗？') ">删除相册</a>
+                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="{:U('Front/albumEdit',array('id'=>$albumId,'mokuai_id'=>$mokuai_id))}">修改相册</a>
+                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="{:U('Front/pictureCreate',array('id'=>$albumId,'mokuai_id'=>$mokuai_id))}">上传图片</a>
+                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="{:U('Front/albumList','mokuai_id='.$mokuai_id)}">返回相册列表</a>
                         </header>
-                        <div class="panel-body">
-                            <a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="{:U('user/usercreate')}">创建用户</a>
-                            <table class="table table-striped" cellpadding=3 cellspacing=5>
-                                <thead>
-                                <tr>
-                                    <!--<th>#</th>-->
-                                    <th>编号</th>
-                                    <th>姓名</th>
-                                    <th>手机号</th>
-                                    <th>权限</th>
-                                    <th>公司</th>
-                                    <th>创建时间</th>
-                                    <th>操作</th>
+                        <div class="panel-body" style="min-height:100%;">
 
-                                </tr>
-                                </thead>
-                                <volist name="list" id="vo">
-                                    <tr>
-                                        <td>{$vo.id}</td>
-                                        <td>{$vo.name}</td>
-                                        <td>{$vo.phone}</td>
-                                        <td>{$vo.role}</td>
-                                        <td>{$vo.company}</td>
-                                        <td>{$vo.date_create}</td>
-
-
-                                        <!--<td> <a  href="{:U('wininfo/wininfolist','actId='.$vo['id'])}"><button class="btn btn-primary btn-xs">-->
-                                        <!--中奖人</button></a>-->
-                                        <!--<td> <a  href="{:U('redenvelopelist/create','actId='.$vo['id'])}"><button class="btn btn-primary btn-xs">-->
-                                        <!--奖品包</button></a>-->
-                                        <!--<td> <a  href="{:U('rulelist/create','actId='.$vo['id'])}"><button class="btn btn-primary btn-xs">-->
-                                        <!--规则</button></a>-->
-                                        <td> <a  href="{:U('user/usershow','id='.$vo['id'])}"><button class="btn btn-primary btn-xs">
-                                            <i class="fa fa-pencil"></i></button></a>
-                                            <a href="{:U('user/userdelete','id='.$vo['id'])}" onclick="return confirm('确定将此记录删除?')">
-                                                <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></a>
-                                        </td>
-                                    </tr>
+                            <ul class="albumlist clearfix row">
+                                <volist name="pictureList"  id="vo">
+                                    <li class="album col-sm-2">
+                                        <a class="album_pic" href="{:U('Front/pictureShow',array('id'=>$vo['id'],'mokuai_id'=>$mokuai_id))}"><img src="__PUBLIC__/weixinapp/upload/{$vo['img']}" /></a>
+                                        <span>{$vo.name}</span>
+                                    </li>
                                 </volist>
-                                <tr>
-                                </tr>
-
-                            </table>
+                            </ul>
                             <div class="dataTables_paginate paging_bootstrap pagination">{$page}</div>
                         </div>
                     </section>

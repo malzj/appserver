@@ -26,8 +26,8 @@
     <script src="/appserver/Public/js/respond.min.js"></script>
     <![endif]-->
 </head>
+<body>
 <section id="container" class="">
-    <!--header start-->
     <!DOCTYPE html>
 <html>
 <head>
@@ -144,22 +144,8 @@
             <li class="sub-menu">
                 <a href="javascript:;" class="dcjq-parent active">
                     <i class="fa fa-sitemap "></i>
-                    <span>活动</span>
+                    <span>相册</span>
                 </a>
-                <ul class="sub">
-                    <li><a id="a1" class="activeColor" href="<?php echo U('Front/companyuserlist','mokuai_id='.$mokuai_id);?>">用户列表1</a></li>
-
-                </ul>
-                <ul class="sub">
-
-                    <li><a id="a2" class="activeColor" href="<?php echo U('Front/memberlist','mokuai_id='.$mokuai_id);?>">会员管理列表</a></li>
-
-                </ul>
-                <ul class="sub">
-
-                    <li><a id="a3" class="activeColor" href="<?php echo U('Gongneng/gongnenglist');?>">功能</a></li>
-
-                </ul>
 
             </li>
             <!--multi level menu end-->
@@ -176,46 +162,50 @@
     <!--main content start-->
     <section id="main-content">
         <section class="wrapper site-min-height" >
-            <div class="row">
-                <div class="col-sm-12">
-                    <section class="panel">
-                        <!-- page start-->
-                        <header class="panel-heading">
-                           会员管理列表
-                        </header>
-                        <div class="panel-body">
-                            <a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="<?php echo U('Front/membercreate','mokuai_id='.$mokuai_id);?>">创建管理</a>
-                            <table class="table table-striped" cellpadding=3 cellspacing=5>
-                                <thead>
-                                <tr>
-                                    <!--<th>#</th>-->
-                                    <th>编号</th>
-                                    <th>名称</th>
-                                    <th>积分等级</th>
-                                    <th>创建时间</th>
-                                    <th>操作</th>
+            <section class="panel">
+                <header class="panel-heading">
+                    添加图片
+                </header>
+                <!-- page start-->
+                <div class="panel-body">
+                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="<?php echo U('Front/pictureAdd');?>">
+                        <input type="hidden" value="<?php echo ($albumId); ?>" name="id"/>
+                        <input type="hidden" value="<?php echo ($mokuai_id); ?>" name="mokuai_id"/>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">图片</label>
+                            <div class="col-sm-10 clearfix">
+                                <input type="file" multiple="true" id="up_img" name="file1" class="form-control" style="border:none;display:inline-block;" form="form1">
 
-                                </tr>
-                                </thead>
-                                <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                                        <td><?php echo ($vo["id"]); ?></td>
-                                        <td><?php echo ($vo["name"]); ?></td>
-                                        <td><?php echo ($vo["jifen"]); ?></td>
-                                        <td><?php echo ($vo["add_date"]); ?></td>
-                                        <td> <a  href="<?php echo U('Front/membershow','id='.$vo['id']);?>"><button class="btn btn-primary btn-xs">
-                                            <i class="fa fa-pencil"></i></button></a>
-                                            <a href="<?php echo U('Front/memberdelete','id='.$vo['id']);?>" onclick="return confirm('确定将此记录删除?')">
-                                                <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></a>
-                                        </td>
-                                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                                <tr>
-                                </tr>
+                                <input type="hidden" name="img" id="fengmian" value="<?php  $name=$_GET['name']; echo $name; ?>"/>
+                                <div id="imgDefault" style="float:left;">
+                                    <img id="img" src="/appserver/Public/weixinapp/upload/<?php  $msg=$_GET['msg']; $name=$_GET['name']; if($msg){ echo $name;}else{?>touxiang.jpg<?php } ?>" style="margin:20px 20px 0 0;width:200px;"/>
+                                    <button type="submit" class="btn btn-primary" id="upload" form="form1">上传</button>
+                                </div>
 
-                            </table>
-                            <div class="dataTables_paginate paging_bootstrap pagination"><?php echo ($page); ?></div>
+                            </div>
                         </div>
-                    </section>
-                </div></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">描述</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="introduction" class="form-control">
+                            </div>
+                        </div>
+                        <button type="submit" id="s" class="btn btn-info">提交</button>
+                        <a href="<?php echo U('Front/albumList');?>" class="btn btn-danger">取消</a>
+
+
+                    </form>
+                    <form class="form-horizontal tasi-form"  enctype="multipart/form-data"  method="post" action="<?php echo U('Front/albumUpload');?>" id="form1">
+                        <input type="hidden" value="add" name="sign"/>
+                        <input type="hidden" value="<?php echo ($albumId); ?>" name="id"/>
+                        <input type="hidden" value="<?php echo ($mokuai_id); ?>" name="mokuai_id"/>
+                    </form>
+                </div>
+
+
+
+            </section>
+
             <!-- page end-->
         </section>
     </section>
@@ -257,7 +247,27 @@
 
 <!--common script for all pages-->
 <script src="/appserver/Public/weixinapp/js/common-scripts.js"></script>
-<body>
 
+<!--上传图片预览 js-->
+<script src="/appserver/Public/weixinapp/js/uploadPreview.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        new uploadPreview({ UpBtn: "up_img", DivShow: "imgDefault", ImgShow: "img" });
+//        $('#upload').click(function(){
+//            var img=$('#up_img').val();
+//            $.ajax({
+//                url: '__APP_PATH__/Front/albumUpload',
+//                type: 'post',
+//                dataType: 'json',
+//                data: {
+//                    img:img,
+//
+//                },
+//                success: function (data) {
+//                }
+//            })
+//        })
+    }
+</script>
 </body>
 </html>

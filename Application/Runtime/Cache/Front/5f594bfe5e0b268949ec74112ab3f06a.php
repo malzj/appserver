@@ -144,22 +144,8 @@
             <li class="sub-menu">
                 <a href="javascript:;" class="dcjq-parent active">
                     <i class="fa fa-sitemap "></i>
-                    <span>活动</span>
+                    <span>相册</span>
                 </a>
-                <ul class="sub">
-                    <li><a id="a1" class="activeColor" href="<?php echo U('Front/companyuserlist','mokuai_id='.$mokuai_id);?>">用户列表1</a></li>
-
-                </ul>
-                <ul class="sub">
-
-                    <li><a id="a2" class="activeColor" href="<?php echo U('Front/memberlist','mokuai_id='.$mokuai_id);?>">会员管理列表</a></li>
-
-                </ul>
-                <ul class="sub">
-
-                    <li><a id="a3" class="activeColor" href="<?php echo U('Gongneng/gongnenglist');?>">功能</a></li>
-
-                </ul>
 
             </li>
             <!--multi level menu end-->
@@ -178,62 +164,47 @@
         <section class="wrapper site-min-height" >
             <section class="panel">
                 <header class="panel-heading">
-                    新建用户
+                    新建相册
                 </header>
                 <!-- page start-->
                 <div class="panel-body">
-                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="/appserver/index.php/Front/Front/useradd">
+                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="<?php echo U('Front/albumUpdate');?>">
+                        <input type="hidden" value="<?php echo ($mokuai_id); ?>" name="mokuai_id"/>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">封面</label>
+                            <div class="col-sm-10 clearfix">
+                                <input type="file" multiple="true" id="up_img" name="file1" class="form-control" style="border:none;display:inline-block;" form="form1">
+
+                                <input type="hidden" name="fengmian" id="fengmian" value="<?php  $msg=$_GET['msg']; $name=$_GET['name']; if($msg){ echo $name;}else{ echo ($albumInfo["fengmian"]); ?> <?php } ?>"/>
+                                <div id="imgDefault" style="float:left;">
+                                    <img id="img" src="/appserver/Public/weixinapp/upload/<?php  $msg=$_GET['msg']; $name=$_GET['name']; if($msg){ echo $name;}else{ echo ($albumInfo["fengmian"]); ?> <?php } ?>" style="margin:20px 20px 0 0;width:200px;"/>
+                                    <button type="submit" class="btn btn-primary" id="upload" form="form1">上传</button>
+                                </div>
+
+                            </div>
+                        </div>
                         <div class="form-group">
                             <label class="col-sm-2 col-sm-2 control-label">名称</label>
+                            <input type="hidden" name="id" value="<?php echo ($albumInfo["id"]); ?>"/>
                             <div class="col-sm-10">
-                                <input type="text" name="name" class="form-control">
+                                <input type="text" name="title" class="form-control" value="<?php echo ($albumInfo["title"]); ?>"/>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">手机号</label>
+                            <label class="col-sm-2 col-sm-2 control-label">描述</label>
                             <div class="col-sm-10">
-                                <input type="text" name="phone" class="form-control">
+                                <input type="text" name="content" class="form-control" value="<?php echo ($albumInfo["content"]); ?>"/>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">用户名</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="username" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">密码</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="password" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">公司</label>
-                            <div class="col-sm-10">
-                        <select type="text" class="form-control" id="role" name="company_id" placeholder="请
-输入权限">
-                            <option value="" selected>请选择公司</option>
-                            <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-                        </select>
-                            </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-sm-2 col-sm-2 control-label">权限</label>
-                    <div class="col-sm-10">
-                    <select type="text" class="form-control" id="role1" name="role" placeholder="请
-输入权限">
-                        <option value="" selected>请选择权限</option>
-                        <option value="微宝后台管理" >微宝后台管理</option>
-                        <option value="公司管理" >公司管理</option>
-                        <option value="公司老板" >公司老板</option>
-                    </select>
-                        </div>
-                </div>
                         <button type="submit" id="s" class="btn btn-info">提交</button>
                         <a href="<?php echo U('user/userlist');?>" class="btn btn-danger">取消</a>
 
                     </form>
-
+                    <form class="form-horizontal tasi-form"  enctype="multipart/form-data"  method="post" action="<?php echo U('Front/albumUpload');?>" id="form1">
+                        <input type="hidden" value="edit" name="sign"/>
+                        <input type="hidden" value="<?php echo ($albumInfo["id"]); ?>" name="id"/>
+                        <input type="hidden" value="<?php echo ($mokuai_id); ?>" name="mokuai_id"/>
+                    </form>
                 </div>
 
 
@@ -281,7 +252,13 @@
 
 <!--common script for all pages-->
 <script src="/appserver/Public/weixinapp/js/common-scripts.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        new uploadPreview({ UpBtn: "up_img", DivShow: "imgDefault", ImgShow: "img" });
 
+    }
+</script>
 
 </body>
 </html>
+>

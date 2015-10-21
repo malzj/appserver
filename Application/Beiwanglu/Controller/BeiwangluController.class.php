@@ -110,7 +110,7 @@ class BeiwangluController extends Controller
             $beiwanglu['title'] = $_POST['title'];
             $beiwanglu['content'] = $_POST['content'];
             $is = $beiwangluModel->where($map)->data($beiwanglu)->save();
-            if($is){
+            if($is>=0){
                 $this->success('操作成功！',U('Beiwanglu/index',array('cid'=>$_SESSION['cid'],'uid'=>$_SESSION['uid'],'companyappid'=>$_SESSION['companyappid'])));
             }
         }

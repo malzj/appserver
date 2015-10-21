@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpStepFilterConfiguration">
+    <option name="skippedFunctions">
+      <list>
+        <option value="Think\Hook::listen" />
+        <option value="G" />
+        <option value="Think\Think::fatalError" />
+      </list>
+    </option>
+  </component>
+</project>

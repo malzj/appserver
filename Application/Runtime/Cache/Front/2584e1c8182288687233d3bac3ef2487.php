@@ -147,12 +147,13 @@
                     <span>活动</span>
                 </a>
                 <ul class="sub">
-                    <li><a id="a1" class="activeColor" href="<?php echo U('Front/companyuserlist','mokuai_id='.$mokuai_id);?>">用户列表1</a></li>
+
+                    <li><a id="a1" class="activeColor" href="<?php echo U('User/userlist');?>">用户列表</a></li>
 
                 </ul>
                 <ul class="sub">
 
-                    <li><a id="a2" class="activeColor" href="<?php echo U('Front/memberlist','mokuai_id='.$mokuai_id);?>">会员管理列表</a></li>
+                    <li><a id="a2" class="activeColor" href="<?php echo U('Company/companylist');?>">公司列表</a></li>
 
                 </ul>
                 <ul class="sub">
@@ -181,10 +182,10 @@
                     <section class="panel">
                         <!-- page start-->
                         <header class="panel-heading">
-                            用户列表
+                            公司用户列表
                         </header>
                         <div class="panel-body">
-                            <a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="<?php echo U('Front/companyusercreate','mokuai_id='.$mokuai_id);?>">创建用户</a>
+                            <a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="<?php echo U('user/usercreate');?>">创建用户</a>
                             <table class="table table-striped" cellpadding=3 cellspacing=5>
                                 <thead>
                                 <tr>

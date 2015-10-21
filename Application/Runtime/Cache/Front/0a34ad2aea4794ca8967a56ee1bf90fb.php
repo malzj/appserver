@@ -26,7 +26,6 @@
     <script src="/appserver/Public/js/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
 <section id="container" class="">
     <!--header start-->
     <!DOCTYPE html>
@@ -63,7 +62,7 @@
         <div data-original-title="左侧菜单" data-placement="right" class="fa fa-bars tooltips"></div>
     </div>
     <!--logo start-->
-    <a href="index.html" class="logo" >vk<span>admin</span></a>
+    <a href="index.html" class="logo" >WB<span>admin</span></a>
     <!--logo end-->
     <div class="nav notify-row" id="top_menu">
         <!--  notification start -->
@@ -145,23 +144,8 @@
             <li class="sub-menu">
                 <a href="javascript:;" class="dcjq-parent active">
                     <i class="fa fa-sitemap "></i>
-                    <span>活动</span>
+                    <span>相册</span>
                 </a>
-                <ul class="sub">
-
-                    <li><a id="a1" class="activeColor" href="<?php echo U('User/userlist');?>">用户列表</a></li>
-
-                </ul>
-                <ul class="sub">
-
-                    <li><a id="a2" class="activeColor" href="<?php echo U('Company/companylist');?>">公司列表</a></li>
-
-                </ul>
-                <ul class="sub">
-
-                    <li><a id="a3" class="activeColor" href="<?php echo U('Gongneng/gongnenglist');?>">功能</a></li>
-
-                </ul>
 
             </li>
             <!--multi level menu end-->
@@ -178,58 +162,29 @@
     <!--main content start-->
     <section id="main-content">
         <section class="wrapper site-min-height" >
-            <section class="panel">
-                <header class="panel-heading">
-                    编辑模块
-                </header>
-                <!-- page start-->
-                <div class="panel-body">
-                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="/appserver/index.php/Login/Mokuai/mokuaiupdate">
-                        <div class="form-group">
-                            <input type="hidden" name="id" value="<?php echo ($business["id"]); ?>">
-                            <label class="col-sm-2 col-sm-2 control-label">名称</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="name" class="form-control" value="<?php echo ($business["name"]); ?>">
-                            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <section class="panel">
+                        <!-- page start-->
+                        <header class="panel-heading clearfix">
+                            图片列表
+                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="<?php echo U('Front/albumDelete',array('id'=>$albumId,'mokuai_id'=>$mokuai_id));?>" onclick="return confirm('确定要删除吗？') ">删除相册</a>
+                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="<?php echo U('Front/albumEdit',array('id'=>$albumId,'mokuai_id'=>$mokuai_id));?>">修改相册</a>
+                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="<?php echo U('Front/pictureCreate',array('id'=>$albumId,'mokuai_id'=>$mokuai_id));?>">上传图片</a>
+                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="<?php echo U('Front/albumList','mokuai_id='.$mokuai_id);?>">返回相册列表</a>
+                        </header>
+                        <div class="panel-body" style="min-height:100%;">
+
+                            <ul class="albumlist clearfix row">
+                                <?php if(is_array($pictureList)): $i = 0; $__LIST__ = $pictureList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="album col-sm-2">
+                                        <a class="album_pic" href="<?php echo U('Front/pictureShow',array('id'=>$vo['id'],'mokuai_id'=>$mokuai_id));?>"><img src="/appserver/Public/weixinapp/upload/<?php echo ($vo['img']); ?>" /></a>
+                                        <span><?php echo ($vo["name"]); ?></span>
+                                    </li><?php endforeach; endif; else: echo "" ;endif; ?>
+                            </ul>
+                            <div class="dataTables_paginate paging_bootstrap pagination"><?php echo ($page); ?></div>
                         </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">功能</label>
-                            <div class="col-sm-10">
-                                <select type="text" class="form-control" id="role" name="gongneng_id" placeholder="请
-输入权限">
-
-                                    <?php if(is_array($list1)): $i = 0; $__LIST__ = $list1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>" <?php if($business[company_id]==$vo[id]){?>selected<?php }?>><?php echo ($vo["name"]); ?></option>
-                                        <!--<?php if($business["company_id"] == '<?php echo ($vo["id"]); ?>'): ?>selected<?php endif; ?>--><?php endforeach; endif; else: echo "" ;endif; ?>
-                                    <!--<?php if(is_array($list1)): $i = 0; $__LIST__ = $list1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>-->
-                                        <!--<option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option>-->
-                                    <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">开始时间</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="begin_date" class="form-control" value="<?php echo ($business["begin_date"]); ?>">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">结束时间</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="over_date" class="form-control" value="<?php echo ($business["over_date"]); ?>">
-                            </div>
-                        </div>
-
-                        <button type="submit" id="s" class="btn btn-info">提交</button>
-                        <a href="<?php echo U('mokuai/mokuailist','Id='.$business['company_id']);?>" class="btn btn-danger">取消</a>
-
-                    </form>
-
-                </div>
-
-
-
-            </section>
-
+                    </section>
+                </div></div>
             <!-- page end-->
         </section>
     </section>
@@ -271,7 +226,7 @@
 
 <!--common script for all pages-->
 <script src="/appserver/Public/weixinapp/js/common-scripts.js"></script>
-
+<body>
 
 </body>
 </html>

@@ -121,7 +121,7 @@
                         <div class="panel-body" style="min-height:800px;">
                             <!--<a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="<?php echo U('gongneng/gongnengcreate');?>">创建功能</a>-->
                             <ul class="xsreport">
-                                <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a href="<?php echo ($vo["url"]); ?>/mokuai_id/<?php echo ($vo["id"]); ?>" target="view_window" style="width:150px;height:150px;display:table;border-radius:150px;" class="c<?php echo ($i%2); ?>"><p>我是好人</p></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+                                <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a href="<?php echo ($vo["url"]); ?>/mokuai_id/<?php echo ($vo["id"]); ?>" target="view_window" style="width:150px;height:150px;display:table;border-radius:150px;" class="c<?php echo ($i%2); ?>"><p><?php echo ($vo["name"]); ?></p></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
                             </ul>
                             <!--<table class="table table-striped" cellpadding=3 cellspacing=5>-->
                                 <!--<thead>-->

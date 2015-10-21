@@ -26,8 +26,8 @@
     <script src="/appserver/Public/js/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
 <section id="container" class="">
+    <!--header start-->
     <!DOCTYPE html>
 <html>
 <head>
@@ -144,22 +144,8 @@
             <li class="sub-menu">
                 <a href="javascript:;" class="dcjq-parent active">
                     <i class="fa fa-sitemap "></i>
-                    <span>活动</span>
+                    <span>相册</span>
                 </a>
-                <ul class="sub">
-                    <li><a id="a1" class="activeColor" href="<?php echo U('Front/companyuserlist','mokuai_id='.$mokuai_id);?>">用户列表1</a></li>
-
-                </ul>
-                <ul class="sub">
-
-                    <li><a id="a2" class="activeColor" href="<?php echo U('Front/memberlist','mokuai_id='.$mokuai_id);?>">会员管理列表</a></li>
-
-                </ul>
-                <ul class="sub">
-
-                    <li><a id="a3" class="activeColor" href="<?php echo U('Gongneng/gongnenglist');?>">功能</a></li>
-
-                </ul>
 
             </li>
             <!--multi level menu end-->
@@ -176,38 +162,26 @@
     <!--main content start-->
     <section id="main-content">
         <section class="wrapper site-min-height" >
-            <section class="panel">
-                <header class="panel-heading">
-                    新建管理
-                </header>
-                <!-- page start-->
-                <div class="panel-body">
-                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="/appserver/index.php/Front/Front/memberadd">
-                        <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">名称</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="name" class="form-control">
-                            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <section class="panel">
+                        <!-- page start-->
+                        <header class="panel-heading clearfix">
+                            相册列表
+                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="<?php echo U('Front/albumCreate','mokuai_id='.$mokuai_id);?>">创建相册</a>
+                        </header>
+                        <div class="panel-body">
+
+                           <ul class="albumlist clearfix row">
+                               <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="album col-sm-2">
+                                        <a class="album_pic" href="<?php echo U('Front/albumShow',array('id'=>$vo['id'],'mokuai_id'=>$mokuai_id));?>"><img src="/appserver/Public/weixinapp/upload/<?php echo ($vo['fengmian']); ?>"/></a>
+                                        <span><?php echo ($vo["title"]); ?></span>
+                                   </li><?php endforeach; endif; else: echo "" ;endif; ?>
+                           </ul>
+                            <div class="dataTables_paginate paging_bootstrap pagination"><?php echo ($page); ?></div>
                         </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">积分</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="jifen" class="form-control">
-                            </div>
-                        </div>
-                        <input type="hidden" name="mokuai_id" value="<?php echo ($mokuai_id); ?>">
-
-                        <button type="submit" id="s" class="btn btn-info">提交</button>
-                        <a href="<?php echo U('Front/memberlist','mokuai_id='.$mokuai_id);?>" class="btn btn-danger">取消</a>
-
-                    </form>
-
-                </div>
-
-
-
-            </section>
-
+                    </section>
+                </div></div>
             <!-- page end-->
         </section>
     </section>
@@ -249,7 +223,7 @@
 
 <!--common script for all pages-->
 <script src="/appserver/Public/weixinapp/js/common-scripts.js"></script>
-
+<body>
 
 </body>
 </html>
