@@ -8,22 +8,22 @@
     <title>微宝</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/appserver1/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/appserver1/Public/weixinapp/css/bootstrap-reset.css" rel="stylesheet">
+    <link href="/appserver/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/appserver/Public/weixinapp/css/bootstrap-reset.css" rel="stylesheet">
     <!--external css-->
-    <link href="/appserver1/Public/weixinapp/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="/appserver/Public/weixinapp/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
 
     <!--right slidebar-->
-    <link href="/appserver1/Public/weixinapp/css/slidebars.css" rel="stylesheet">
+    <link href="/appserver/Public/weixinapp/css/slidebars.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/appserver1/Public/weixinapp/css/style.css" rel="stylesheet">
-    <link href="/appserver1/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
+    <link href="/appserver/Public/weixinapp/css/style.css" rel="stylesheet">
+    <link href="/appserver/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
-    <script src="/appserver1/Public/js/html5shiv.js"></script>
-    <script src="/appserver1/Public/js/respond.min.js"></script>
+    <script src="/appserver/Public/js/html5shiv.js"></script>
+    <script src="/appserver/Public/js/respond.min.js"></script>
     <![endif]-->
 </head>
 <body>
@@ -38,22 +38,22 @@
     <title>Blank</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/appserver1/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/appserver1/Public/weixinapp/css/bootstrap-reset.css" rel="stylesheet">
+    <link href="/appserver/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/appserver/Public/weixinapp/css/bootstrap-reset.css" rel="stylesheet">
     <!--external css-->
-    <link href="/appserver1/Public/weixinapp/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="/appserver/Public/weixinapp/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
 
     <!--right slidebar-->
-    <link href="/appserver1/Public/weixinapp/css/slidebars.css" rel="stylesheet">
+    <link href="/appserver/Public/weixinapp/css/slidebars.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/appserver1/Public/weixinapp/css/style.css" rel="stylesheet">
-    <link href="/appserver1/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
+    <link href="/appserver/Public/weixinapp/css/style.css" rel="stylesheet">
+    <link href="/appserver/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
-    <script src="/appserver1/Public/weixinapp/js/html5shiv.js"></script>
-    <script src="/appserver1/Public/weixinapp/js/respond.min.js"></script>
+    <script src="/appserver/Public/weixinapp/js/html5shiv.js"></script>
+    <script src="/appserver/Public/weixinapp/js/respond.min.js"></script>
     <![endif]-->
 </head>
 <body>
@@ -110,26 +110,26 @@
     <title>Blank</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/appserver1/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/appserver1/Public/weixinapp/css/bootstrap-reset.css" rel="stylesheet">
+    <link href="/appserver/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/appserver/Public/weixinapp/css/bootstrap-reset.css" rel="stylesheet">
     <!--external css-->
-    <link href="/appserver1/Public/weixinapp/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="/appserver/Public/weixinapp/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
 
     <!--right slidebar-->
-    <link href="/appserver1/Public/weixinapp/css/slidebars.css" rel="stylesheet">
+    <link href="/appserver/Public/weixinapp/css/slidebars.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/appserver1/Public/weixinapp/css/style.css" rel="stylesheet">
+    <link href="/appserver/Public/weixinapp/css/style.css" rel="stylesheet">
 
-    <link href="/appserver1/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
+    <link href="/appserver/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
     <style type="text/css">
         ul.sidebar-menu li ul.sub li a.activeColor{ color:#fff;}
     </style>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
-    <script src="/appserver1/Public/weixinapp/js/html5shiv.js"></script>
-    <script src="/appserver1/Public/weixinapp/js/respond.min.js"></script>
+    <script src="/appserver/Public/weixinapp/js/html5shiv.js"></script>
+    <script src="/appserver/Public/weixinapp/js/respond.min.js"></script>
 
     <![endif]-->
 </head>
@@ -168,7 +168,7 @@
         <!-- sidebar menu end-->
     </div>
 </aside>
-<script src="/appserver1/Public/weixinapp/js/jquery.js"></script>
+<script src="/appserver/Public/weixinapp/js/jquery.js"></script>
 
 </body>
 </html>
@@ -182,7 +182,7 @@
                 </header>
                 <!-- page start-->
                 <div class="panel-body">
-                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="/appserver1/index.php/Front/Front/companyuseradd">
+                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="/appserver/index.php/Front/Front/companyuseradd">
                         <input type="hidden" name="mokuai_id" value="<?php echo ($mokuai_id); ?>" />
                         <div class="form-group">
                             <label class="col-sm-2 col-sm-2 control-label">用户名</label>
@@ -208,15 +208,17 @@
                                 <input type="text" name="phone" class="form-control">
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">模块</label>
-                            <div class="col-sm-10">
-                                <select type="text" class="form-control" id="mokuaiid" name="mokuai_id">
-                                    <option value="" selected>请选择模块</option>
-                                    <?php if(is_array($mokuailist)): $i = 0; $__LIST__ = $mokuailist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-                                </select>
-                            </div>
-                        </div>
+                        <!--<div class="form-group">-->
+                            <!--<label class="col-sm-2 col-sm-2 control-label">模块</label>-->
+                            <!--<div class="col-sm-10">-->
+                                <!--<select type="text" class="form-control" id="mokuaiid" name="mokuai_id">-->
+                                    <!--<option value="" selected>请选择模块</option>-->
+                                    <!--<?php if(is_array($mokuailist)): $i = 0; $__LIST__ = $mokuailist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>-->
+                                        <!--<option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option>-->
+                                    <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
+                                <!--</select>-->
+                            <!--</div>-->
+                        <!--</div>-->
                         <div class="form-group">
                             <label class="col-sm-2 col-sm-2 control-label">生日</label>
                             <div class="col-sm-10">
@@ -272,16 +274,16 @@
 
 
 
-<script src="/appserver1/Public/weixinapp/js/jquery.js"></script>
-<script src="/appserver1/Public/weixinapp/js/bootstrap.min.js"></script>
-<script class="include" type="text/javascript" src="/appserver1/Public/weixinapp/js/jquery.dcjqaccordion.2.7.js"></script>
-<script src="/appserver1/Public/weixinapp/js/jquery.scrollTo.min.js"></script>
-<script src="/appserver1/Public/weixinapp/js/slidebars.min.js"></script>
-<script src="/appserver1/Public/weixinapp/js/jquery.nicescroll.js" type="text/javascript"></script>
-<script src="/appserver1/Public/weixinapp/js/respond.min.js" ></script>
+<script src="/appserver/Public/weixinapp/js/jquery.js"></script>
+<script src="/appserver/Public/weixinapp/js/bootstrap.min.js"></script>
+<script class="include" type="text/javascript" src="/appserver/Public/weixinapp/js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="/appserver/Public/weixinapp/js/jquery.scrollTo.min.js"></script>
+<script src="/appserver/Public/weixinapp/js/slidebars.min.js"></script>
+<script src="/appserver/Public/weixinapp/js/jquery.nicescroll.js" type="text/javascript"></script>
+<script src="/appserver/Public/weixinapp/js/respond.min.js" ></script>
 
 <!--common script for all pages-->
-<script src="/appserver1/Public/weixinapp/js/common-scripts.js"></script>
+<script src="/appserver/Public/weixinapp/js/common-scripts.js"></script>
 
 
 </body>
