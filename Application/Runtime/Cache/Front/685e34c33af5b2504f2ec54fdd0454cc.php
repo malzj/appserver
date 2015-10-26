@@ -182,58 +182,57 @@
                 </header>
                 <!-- page start-->
                 <div class="panel-body">
-                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="/appserver/index.php/Front/Front/companyuseradd">
+                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="/appserver/index.php/Front/Front/companyuserupdate">
+                        <input type="hidden" name="id" value="<?php echo ($companyuserinfo["id"]); ?>" />
                         <input type="hidden" name="mokuai_id" value="<?php echo ($mokuai_id); ?>" />
                         <div class="form-group">
                             <label class="col-sm-2 col-sm-2 control-label">用户名</label>
                             <div class="col-sm-10">
-                                <input type="text" name="username" class="form-control">
+                                <input type="text" name="username" class="form-control" value="<?php echo ($companyuserinfo["username"]); ?>">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 col-sm-2 control-label">密码</label>
                             <div class="col-sm-10">
-                                <input type="text" name="password" class="form-control">
+                                <input type="text" name="password" class="form-control" value="<?php echo ($companyuserinfo["password"]); ?>">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 col-sm-2 control-label">姓名</label>
                             <div class="col-sm-10">
-                                <input type="text" name="name" class="form-control">
+                                <input type="text" name="name" class="form-control" value="<?php echo ($companyuserinfo["name"]); ?>">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 col-sm-2 control-label">电话</label>
                             <div class="col-sm-10">
-                                <input type="text" name="phone" class="form-control">
+                                <input type="text" name="phone" class="form-control" value="<?php echo ($companyuserinfo["phone"]); ?>">
                             </div>
                         </div>
-                        <!--<div class="form-group">-->
-                            <!--<label class="col-sm-2 col-sm-2 control-label">模块</label>-->
-                            <!--<div class="col-sm-10">-->
-                                <!--<select type="text" class="form-control" id="mokuaiid" name="mokuai_id">-->
-                                    <!--<option value="" selected>请选择模块</option>-->
-                                    <!--<?php if(is_array($mokuailist)): $i = 0; $__LIST__ = $mokuailist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>-->
-                                        <!--<option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option>-->
-                                    <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
-                                <!--</select>-->
-                            <!--</div>-->
-                        <!--</div>-->
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">模块</label>
+                            <div class="col-sm-10">
+                                <select type="text" class="form-control" id="mokuaiid" name="mokuai_id">
+                                    <option value="" selected>请选择模块</option>
+                                    <?php if(is_array($mokuailist)): $i = 0; $__LIST__ = $mokuailist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>" <?php if($companyuserinfo['mokuai_id']==$vo['id']){?>selected<?php }?>><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                                </select>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <label class="col-sm-2 col-sm-2 control-label">生日</label>
                             <div class="col-sm-10">
-                                <input type="text" name="shengri" class="form-control">
+                                <input type="text" name="shengri" class="form-control" value="<?php echo ($companyuserinfo["shengri"]); ?>">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 col-sm-2 control-label">积分</label>
                             <div class="col-sm-10">
-                                <input type="text" name="jifen" class="form-control">
+                                <input type="text" name="jifen" class="form-control" value="<?php echo ($companyuserinfo["jifen"]); ?>">
                             </div>
                         </div>
 
                         <button type="submit" id="s" class="btn btn-info">提交</button>
-                        <a href="<?php echo U('user/userlist');?>" class="btn btn-danger">取消</a>
+                        <a href="<?php echo U('Front/companyuserlist','mokuai_id='.$mokuai_id);?>" class="btn btn-danger">取消</a>
 
                     </form>
 

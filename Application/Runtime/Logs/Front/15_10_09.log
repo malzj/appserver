@@ -1,0 +1,859 @@
+[ 2015-10-09T10:36:16+08:00 ] 127.0.0.1 /appserver1/?s=Front/front/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+NOTIC: [8] Undefined index: xinxi D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 15 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000536s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001201s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001485s ]
+
+[ 2015-10-09T10:43:48+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001196s ]
+ERR: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2015-10-09T10:45:30+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `user` WHERE `username` = '223' AND `password` = '2223' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-10-09T10:45:30+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/index/xinxi/%E6%82%A8%E8%BE%93%E5%85%A5%E7%9A%84%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81%E6%9C%89%E8%AF%AF.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001489s ]
+NOTIC: [8] iconv() [<a href='function.iconv'>function.iconv</a>]: Detected an illegal character in input string D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000888s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001142s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001482s ]
+
+[ 2015-10-09T10:45:30+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/assets/js/ie-emulation-modes-warning.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+ERR: 非法操作:assets
+
+[ 2015-10-09T10:45:30+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/assets/js/ie10-viewport-bug-workaround.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+ERR: 非法操作:assets
+
+[ 2015-10-09T10:45:30+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+
+[ 2015-10-09T10:45:40+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001206s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `user` WHERE `username` = '223' AND `password` = '2223' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-10-09T10:45:40+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/index/xinxi/%E6%82%A8%E8%BE%93%E5%85%A5%E7%9A%84%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81%E6%9C%89%E8%AF%AF.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001289s ]
+NOTIC: [8] iconv() [<a href='function.iconv'>function.iconv</a>]: Detected an illegal character in input string D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001153s ]
+
+[ 2015-10-09T10:45:40+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/assets/js/ie-emulation-modes-warning.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001208s ]
+ERR: 非法操作:assets
+
+[ 2015-10-09T10:45:40+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/assets/js/ie10-viewport-bug-workaround.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+ERR: 非法操作:assets
+
+[ 2015-10-09T11:35:45+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002898s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'zhangjing' AND `password` = 'zhangjing' LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2015-10-09T11:35:45+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/index/xinxi/%E6%82%A8%E6%B2%A1%E6%9C%89%E6%9D%83%E9%99%90%E7%99%BB%E9%99%86%E7%B3%BB%E7%BB%9F.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+NOTIC: [8] iconv() [<a href='function.iconv'>function.iconv</a>]: Detected an incomplete multibyte character in input string D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005511s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001476s ]
+
+[ 2015-10-09T11:35:45+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/assets/js/ie-emulation-modes-warning.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+ERR: 非法操作:assets
+
+[ 2015-10-09T11:35:45+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/assets/js/ie10-viewport-bug-workaround.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001310s ]
+ERR: 非法操作:assets
+
+[ 2015-10-09T11:37:54+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'zhangjing' AND `password` = 'zhangjing' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-10-09T11:39:35+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001214s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'gengyongxin' AND `password` = 'gengyongxin' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-10-09T11:39:35+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/mokuailist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `mokuai` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined index: compang_id D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 53 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mokuai` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `mokuai` WHERE `begin_date` <= '2015-10-09' AND `over_date` >= '2015-10-09' AND `company_id` = null ORDER BY add_date desc LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001176s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001374s ]
+
+[ 2015-10-09T14:12:28+08:00 ] 127.0.0.1 /appserver1/?s=Front/front/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001206s ]
+NOTIC: [8] Undefined index: xinxi D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 15 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000255s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000791s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031857s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010006s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001850s ]
+
+[ 2015-10-09T14:12:38+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001186s ]
+ERR: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2015-10-09T14:13:28+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0572s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'zhangjing' AND `password` = 'zhangjing' LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2015-10-09T14:13:30+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/index/xinxi/%E6%82%A8%E6%B2%A1%E6%9C%89%E6%9D%83%E9%99%90%E7%99%BB%E9%99%86%E7%B3%BB%E7%BB%9F.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001695s ]
+NOTIC: [8] iconv() [<a href='function.iconv'>function.iconv</a>]: Detected an incomplete multibyte character in input string D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000812s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002074s ]
+
+[ 2015-10-09T14:13:30+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/assets/js/ie-emulation-modes-warning.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+ERR: 非法操作:assets
+
+[ 2015-10-09T14:13:30+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/assets/js/ie10-viewport-bug-workaround.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001142s ]
+ERR: 非法操作:assets
+
+[ 2015-10-09T14:13:30+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000789s ]
+
+[ 2015-10-09T14:13:52+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'gengyongxin' AND `password` = 'gengyongxin' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-10-09T14:13:52+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/mokuailist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+SQL: SHOW COLUMNS FROM `mokuai` [ RunTime:0.0448s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mokuai` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `mokuai` WHERE `begin_date` >= '2015-10-09' AND `over_date` <= '2015-10-09' AND `company_id` = '5' ORDER BY add_date desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Front/View/./Login/loginside.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\wamp\www\appserver1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000554s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001136s ]
+
+[ 2015-10-09T14:15:01+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/mokuailist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+SQL: SHOW COLUMNS FROM `mokuai` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mokuai` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `mokuai` WHERE `begin_date` >= '2015-10-09' AND `over_date` <= '2015-10-09' AND `company_id` = '5' ORDER BY add_date desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Front/View/./Login/loginside.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\wamp\www\appserver1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000556s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001042s ]
+
+[ 2015-10-09T14:15:28+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001149s ]
+NOTIC: [8] Undefined index: xinxi D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 15 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000506s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010889s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001139s ]
+
+[ 2015-10-09T14:35:41+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/companyuserlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001781s ]
+NOTIC: [8] Undefined index: mokuai_id D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `companyuser` [ RunTime:0.0744s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `companyuser` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `companyuser` WHERE `mokuai_id` = null AND `company_id` = '5' ORDER BY add_date desc LIMIT 0,10   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000344s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000897s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086659s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087137s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.033011s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.033370s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008047s ]
+
+[ 2015-10-09T14:40:19+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/companyuserlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001895s ]
+NOTIC: [8] Undefined index: mokuai_id D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `companyuser` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `companyuser` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `companyuser` WHERE `mokuai_id` = null AND `company_id` = '5' ORDER BY add_date desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2015-10-09T14:42:18+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+NOTIC: [8] Undefined index: xinxi D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 15 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000467s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033079s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000919s ]
+
+[ 2015-10-09T14:42:34+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002205s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0244s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'zhangjing' AND `password` = 'zhangjing' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-10-09T14:42:36+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/index/xinxi/%E6%82%A8%E6%B2%A1%E6%9C%89%E6%9D%83%E9%99%90%E7%99%BB%E9%99%86%E7%B3%BB%E7%BB%9F.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001498s ]
+NOTIC: [8] iconv() [<a href='function.iconv'>function.iconv</a>]: Detected an incomplete multibyte character in input string D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000244s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000549s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001015s ]
+
+[ 2015-10-09T14:42:38+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/assets/js/ie-emulation-modes-warning.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007201s ]
+ERR: 非法操作:assets
+
+[ 2015-10-09T14:42:39+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/assets/js/ie10-viewport-bug-workaround.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+ERR: 非法操作:assets
+
+[ 2015-10-09T14:42:49+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001075s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'gengyongxin' AND `password` = 'gengyongxin' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2015-10-09T14:42:51+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/mokuailist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001056s ]
+SQL: SHOW COLUMNS FROM `mokuai` [ RunTime:0.0245s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mokuai` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `mokuai` WHERE `begin_date` >= '2015-10-09' AND `over_date` <= '2015-10-09' AND `company_id` = '5' ORDER BY add_date desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Front/View/./Login/loginside.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\wamp\www\appserver1\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000370s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000958s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001153s ]
+
+[ 2015-10-09T14:51:28+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/companyuserlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000985s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+NOTIC: [8] Undefined index: mokuai_id D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `companyuser` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `companyuser` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `companyuser` WHERE `mokuai_id` = null AND `company_id` = '5' ORDER BY add_date desc LIMIT 0,10   [ RunTime:0.0005s ]
+
+[ 2015-10-09T15:01:12+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/companyuserlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001614s ]
+NOTIC: [8] Undefined index: mokuai_id D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `companyuser` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `companyuser` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `companyuser` WHERE `mokuai_id` = null AND `company_id` = '5' ORDER BY add_date desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000370s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2015-10-09T15:02:03+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/companyuserlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001723s ]
+NOTIC: [8] Undefined index: mokuai_id D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `companyuser` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `companyuser` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `companyuser` WHERE `mokuai_id` = null AND `company_id` = '5' ORDER BY add_date desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000388s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001014s ]
+
+[ 2015-10-09T15:02:15+08:00 ] 127.0.0.1 /appserver1/index.php/Front/front/companyusercreate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000995s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000386s ]
+NOTIC: [8] Undefined variable: mokuai_id D:\wamp\www\appserver1\Application\Runtime\Cache\Front\945be1b5d528bb9c39e176b0a9645526.php 第 150 行.
+NOTIC: [8] Undefined variable: mokuai_id D:\wamp\www\appserver1\Application\Runtime\Cache\Front\945be1b5d528bb9c39e176b0a9645526.php 第 155 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\appserver1\Application\Runtime\Cache\Front\945be1b5d528bb9c39e176b0a9645526.php 第 215 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\appserver1\Application\Runtime\Cache\Front\945be1b5d528bb9c39e176b0a9645526.php 第 266 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024345s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024549s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000913s ]
+
+[ 2015-10-09T15:39:36+08:00 ] 127.0.0.1 /appserver1/index.php/Front/front/companyusercreate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001157s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000391s ]
+NOTIC: [8] Undefined variable: mokuai_id D:\wamp\www\appserver1\Application\Runtime\Cache\Front\945be1b5d528bb9c39e176b0a9645526.php 第 150 行.
+NOTIC: [8] Undefined variable: mokuai_id D:\wamp\www\appserver1\Application\Runtime\Cache\Front\945be1b5d528bb9c39e176b0a9645526.php 第 155 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\appserver1\Application\Runtime\Cache\Front\945be1b5d528bb9c39e176b0a9645526.php 第 216 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\appserver1\Application\Runtime\Cache\Front\945be1b5d528bb9c39e176b0a9645526.php 第 263 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001264s ]
+
+[ 2015-10-09T15:42:37+08:00 ] 127.0.0.1 /appserver1/index.php/Front/front/companyusercreate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000388s ]
+NOTIC: [8] Undefined variable: mokuai_id D:\wamp\www\appserver1\Application\Runtime\Cache\Front\945be1b5d528bb9c39e176b0a9645526.php 第 150 行.
+NOTIC: [8] Undefined variable: mokuai_id D:\wamp\www\appserver1\Application\Runtime\Cache\Front\945be1b5d528bb9c39e176b0a9645526.php 第 155 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\appserver1\Application\Runtime\Cache\Front\945be1b5d528bb9c39e176b0a9645526.php 第 216 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\appserver1\Application\Runtime\Cache\Front\945be1b5d528bb9c39e176b0a9645526.php 第 263 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001054s ]
+
+[ 2015-10-09T16:12:37+08:00 ] 127.0.0.1 /appserver1/index.php/Front/front/companyusercreate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001216s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000402s ]
+NOTIC: [8] Undefined variable: mokuai_id D:\wamp\www\appserver1\Application\Runtime\Cache\Front\945be1b5d528bb9c39e176b0a9645526.php 第 150 行.
+NOTIC: [8] Undefined variable: mokuai_id D:\wamp\www\appserver1\Application\Runtime\Cache\Front\945be1b5d528bb9c39e176b0a9645526.php 第 155 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\appserver1\Application\Runtime\Cache\Front\945be1b5d528bb9c39e176b0a9645526.php 第 216 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\appserver1\Application\Runtime\Cache\Front\945be1b5d528bb9c39e176b0a9645526.php 第 263 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001125s ]
+
+[ 2015-10-09T16:12:45+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/companyuseradd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001141s ]
+SQL: SHOW COLUMNS FROM `companyuser` [ RunTime:0.0053s ]
+NOTIC: [8] Use of undefined constant company_id - assumed 'company_id' D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 169 行.
+
+[ 2015-10-09T16:13:46+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/companyuseradd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001267s ]
+SQL: SHOW COLUMNS FROM `companyuser` [ RunTime:0.0050s ]
+NOTIC: [8] Use of undefined constant company_id - assumed 'company_id' D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 169 行.
+SQL: SELECT * FROM `companyuser` WHERE `company_id` = '5' ORDER BY id desc LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-10-09T16:14:46+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/companyuseradd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001727s ]
+SQL: SHOW COLUMNS FROM `companyuser` [ RunTime:0.0052s ]
+NOTIC: [8] Use of undefined constant company_id - assumed 'company_id' D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 169 行.
+SQL: SELECT * FROM `companyuser` WHERE `company_id` = '5' ORDER BY id desc LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-10-09T16:15:06+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/companyuseradd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001126s ]
+SQL: SHOW COLUMNS FROM `companyuser` [ RunTime:0.0052s ]
+NOTIC: [8] Use of undefined constant company_id - assumed 'company_id' D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 169 行.
+SQL: SELECT * FROM `companyuser` WHERE `company_id` = '5' ORDER BY id desc LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2015-10-09T16:15:45+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/companyuseradd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002411s ]
+SQL: SHOW COLUMNS FROM `companyuser` [ RunTime:0.0055s ]
+NOTIC: [8] Use of undefined constant company_id - assumed 'company_id' D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 169 行.
+SQL: SELECT * FROM `companyuser` WHERE `company_id` = '5' ORDER BY id desc LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001974s ]
+
+[ 2015-10-09T16:16:11+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/companyuseradd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
+SQL: SHOW COLUMNS FROM `companyuser` [ RunTime:0.0049s ]
+NOTIC: [8] Use of undefined constant company_id - assumed 'company_id' D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 169 行.
+SQL: SELECT * FROM `companyuser` WHERE `company_id` = '5' ORDER BY id desc LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-10-09T16:53:00+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/companyuseradd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+SQL: SHOW COLUMNS FROM `companyuser` [ RunTime:0.0044s ]
+NOTIC: [8] Use of undefined constant company_id - assumed 'company_id' D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 169 行.
+SQL: SELECT * FROM `companyuser` WHERE `company_id` = '5' ORDER BY id desc LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-10-09T16:53:32+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/companyuseradd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001339s ]
+SQL: SHOW COLUMNS FROM `companyuser` [ RunTime:0.0044s ]
+NOTIC: [8] Use of undefined constant company_id - assumed 'company_id' D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 169 行.
+SQL: SELECT * FROM `companyuser` WHERE `company_id` = '5' ORDER BY id desc LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-10-09T17:01:41+08:00 ] 127.0.0.1 /appserver1/index.php/Front/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001516s ]
+ERR: 无法加载控制器:User
+
+[ 2015-10-09T17:01:47+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/companyuserlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001318s ]
+NOTIC: [8] Undefined index: mokuai_id D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `companyuser` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `companyuser` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `companyuser` WHERE `mokuai_id` = null AND `company_id` = '5' ORDER BY add_date desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000630s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001288s ]
+
+[ 2015-10-09T17:02:22+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/companyuserlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001425s ]
+NOTIC: [8] Undefined index: mokuai_id D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `companyuser` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `companyuser` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `companyuser` WHERE `mokuai_id` = null AND `company_id` = '5' ORDER BY add_date desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000610s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024657s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001740s ]
+
+[ 2015-10-09T17:02:34+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/companyuserlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001018s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001296s ]
+NOTIC: [8] Undefined index: mokuai_id D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `companyuser` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `companyuser` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `companyuser` WHERE `mokuai_id` = null AND `company_id` = '5' ORDER BY add_date desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000616s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000924s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001430s ]
+
+[ 2015-10-09T17:04:14+08:00 ] 127.0.0.1 /appserver1/index.php/Front/Front/companyuserlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001382s ]
+NOTIC: [8] Undefined index: mokuai_id D:\wamp\www\appserver1\Application\Front\Controller\FrontController.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `companyuser` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `companyuser` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `companyuser` WHERE `mokuai_id` = null AND `company_id` = '5' ORDER BY add_date desc LIMIT 0,10   [ RunTime:0.0006s ]
+

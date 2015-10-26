@@ -3,9 +3,7 @@
   <component name="PhpStepFilterConfiguration">
     <option name="skippedFunctions">
       <list>
-        <option value="Think\Hook::listen" />
-        <option value="G" />
-        <option value="Think\Think::fatalError" />
+        <option value="Front\Controller\FrontController-&gt;mokuailist" />
       </list>
     </option>
   </component>

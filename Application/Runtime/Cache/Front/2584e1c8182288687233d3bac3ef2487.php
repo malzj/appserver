@@ -27,7 +27,6 @@
     <![endif]-->
 </head>
 <section id="container" class="">
-    <!--header start-->
     <!DOCTYPE html>
 <html>
 <head>
@@ -147,13 +146,12 @@
                     <span>活动</span>
                 </a>
                 <ul class="sub">
-
-                    <li><a id="a1" class="activeColor" href="<?php echo U('User/userlist');?>">用户列表</a></li>
+                    <li><a id="a1" class="activeColor" href="<?php echo U('Front/companyuserlist','mokuai_id='.$mokuai_id);?>">用户列表1</a></li>
 
                 </ul>
                 <ul class="sub">
 
-                    <li><a id="a2" class="activeColor" href="<?php echo U('Company/companylist');?>">公司列表</a></li>
+                    <li><a id="a2" class="activeColor" href="<?php echo U('Front/memberlist','mokuai_id='.$mokuai_id);?>">会员管理列表</a></li>
 
                 </ul>
                 <ul class="sub">
@@ -185,7 +183,7 @@
                             公司用户列表
                         </header>
                         <div class="panel-body">
-                            <a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="<?php echo U('user/usercreate');?>">创建用户</a>
+                            <a  class="btn btn-primary" style="margin-right: 20px;margin-top:10px;float: right" href="<?php echo U('front/companyusercreate','mokuai_id='.$mokuai_id);?>">创建用户</a>
                             <table class="table table-striped" cellpadding=3 cellspacing=5>
                                 <thead>
                                 <tr>
@@ -193,8 +191,8 @@
                                     <th>编号</th>
                                     <th>姓名</th>
                                     <th>手机号</th>
-                                    <th>权限</th>
-                                    <th>公司</th>
+                                    <th>会员</th>
+                                    <th>生日</th>
                                     <th>创建时间</th>
                                     <th>操作</th>
 
@@ -204,9 +202,9 @@
                                         <td><?php echo ($vo["id"]); ?></td>
                                         <td><?php echo ($vo["name"]); ?></td>
                                         <td><?php echo ($vo["phone"]); ?></td>
-                                        <td><?php echo ($vo["role"]); ?></td>
-                                        <td><?php echo ($vo["company"]); ?></td>
-                                        <td><?php echo ($vo["date_create"]); ?></td>
+                                        <td><?php echo ($vo["huiyuanname"]); ?></td>
+                                        <td><?php echo ($vo["shengri"]); ?></td>
+                                        <td><?php echo ($vo["add_date"]); ?></td>
 
 
                                         <!--<td> <a  href="<?php echo U('wininfo/wininfolist','actId='.$vo['id']);?>"><button class="btn btn-primary btn-xs">-->
@@ -215,9 +213,9 @@
                                         <!--奖品包</button></a>-->
                                         <!--<td> <a  href="<?php echo U('rulelist/create','actId='.$vo['id']);?>"><button class="btn btn-primary btn-xs">-->
                                         <!--规则</button></a>-->
-                                        <td> <a  href="<?php echo U('user/usershow','id='.$vo['id']);?>"><button class="btn btn-primary btn-xs">
+                                        <td> <a  href="<?php echo U('Front/companyuseredit',array('id'=>$vo['id'],'mokuai_id'=>$mokuai_id));?>"><button class="btn btn-primary btn-xs">
                                             <i class="fa fa-pencil"></i></button></a>
-                                            <a href="<?php echo U('user/userdelete','id='.$vo['id']);?>" onclick="return confirm('确定将此记录删除?')">
+                                            <a href="<?php echo U('Front/companyuserdelete',array('id'=>$vo['id'],'mokuai_id'=>$mokuai_id));?>" onclick="return confirm('确定将此记录删除?')">
                                                 <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></a>
                                         </td>
                                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>

@@ -8,26 +8,27 @@
     <title>微宝</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/appserver/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/appserver/Public/weixinapp/css/bootstrap-reset.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/bootstrap-reset.css" rel="stylesheet">
     <!--external css-->
-    <link href="/appserver/Public/weixinapp/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="/appserver1/Public/weixinapp/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
 
     <!--right slidebar-->
-    <link href="/appserver/Public/weixinapp/css/slidebars.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/slidebars.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/appserver/Public/weixinapp/css/style.css" rel="stylesheet">
-    <link href="/appserver/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
+    <link href="/appserver1/Public/weixinapp/css/style.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
-    <script src="/appserver/Public/js/html5shiv.js"></script>
-    <script src="/appserver/Public/js/respond.min.js"></script>
+    <script src="/appserver1/Public/js/html5shiv.js"></script>
+    <script src="/appserver1/Public/js/respond.min.js"></script>
     <![endif]-->
 </head>
 <body>
 <section id="container" class="">
+    <!--header start-->
     <!DOCTYPE html>
 <html>
 <head>
@@ -38,22 +39,22 @@
     <title>Blank</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/appserver/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/appserver/Public/weixinapp/css/bootstrap-reset.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/bootstrap-reset.css" rel="stylesheet">
     <!--external css-->
-    <link href="/appserver/Public/weixinapp/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="/appserver1/Public/weixinapp/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
 
     <!--right slidebar-->
-    <link href="/appserver/Public/weixinapp/css/slidebars.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/slidebars.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/appserver/Public/weixinapp/css/style.css" rel="stylesheet">
-    <link href="/appserver/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
+    <link href="/appserver1/Public/weixinapp/css/style.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
-    <script src="/appserver/Public/weixinapp/js/html5shiv.js"></script>
-    <script src="/appserver/Public/weixinapp/js/respond.min.js"></script>
+    <script src="/appserver1/Public/weixinapp/js/html5shiv.js"></script>
+    <script src="/appserver1/Public/weixinapp/js/respond.min.js"></script>
     <![endif]-->
 </head>
 <body>
@@ -62,7 +63,7 @@
         <div data-original-title="左侧菜单" data-placement="right" class="fa fa-bars tooltips"></div>
     </div>
     <!--logo start-->
-    <a href="index.html" class="logo" >WB<span>admin</span></a>
+    <a href="index.html" class="logo" >vk<span>admin</span></a>
     <!--logo end-->
     <div class="nav notify-row" id="top_menu">
         <!--  notification start -->
@@ -110,26 +111,26 @@
     <title>Blank</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/appserver/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/appserver/Public/weixinapp/css/bootstrap-reset.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/bootstrap-reset.css" rel="stylesheet">
     <!--external css-->
-    <link href="/appserver/Public/weixinapp/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="/appserver1/Public/weixinapp/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
 
     <!--right slidebar-->
-    <link href="/appserver/Public/weixinapp/css/slidebars.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/slidebars.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/appserver/Public/weixinapp/css/style.css" rel="stylesheet">
+    <link href="/appserver1/Public/weixinapp/css/style.css" rel="stylesheet">
 
-    <link href="/appserver/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
+    <link href="/appserver1/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
     <style type="text/css">
         ul.sidebar-menu li ul.sub li a.activeColor{ color:#fff;}
     </style>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
-    <script src="/appserver/Public/weixinapp/js/html5shiv.js"></script>
-    <script src="/appserver/Public/weixinapp/js/respond.min.js"></script>
+    <script src="/appserver1/Public/weixinapp/js/html5shiv.js"></script>
+    <script src="/appserver1/Public/weixinapp/js/respond.min.js"></script>
 
     <![endif]-->
 </head>
@@ -144,8 +145,23 @@
             <li class="sub-menu">
                 <a href="javascript:;" class="dcjq-parent active">
                     <i class="fa fa-sitemap "></i>
-                    <span>相册</span>
+                    <span>活动</span>
                 </a>
+                <ul class="sub">
+
+                    <li><a id="a1" class="activeColor" href="<?php echo U('User/userlist');?>">用户列表</a></li>
+
+                </ul>
+                <ul class="sub">
+
+                    <li><a id="a2" class="activeColor" href="<?php echo U('Company/companylist');?>">公司列表</a></li>
+
+                </ul>
+                <ul class="sub">
+
+                    <li><a id="a3" class="activeColor" href="<?php echo U('Gongneng/gongnenglist');?>">功能</a></li>
+
+                </ul>
 
             </li>
             <!--multi level menu end-->
@@ -154,7 +170,7 @@
         <!-- sidebar menu end-->
     </div>
 </aside>
-<script src="/appserver/Public/weixinapp/js/jquery.js"></script>
+<script src="/appserver1/Public/weixinapp/js/jquery.js"></script>
 
 </body>
 </html>
@@ -164,47 +180,50 @@
         <section class="wrapper site-min-height" >
             <section class="panel">
                 <header class="panel-heading">
-                    新建相册
+                    编辑模块
                 </header>
                 <!-- page start-->
                 <div class="panel-body">
-                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="<?php echo U('Front/albumUpdate');?>">
-                        <input type="hidden" value="<?php echo ($mokuai_id); ?>" name="mokuai_id"/>
+                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="/appserver1/index.php/Login/Mokuai/mokuaiupdate">
                         <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">封面</label>
-                            <div class="col-sm-10 clearfix">
-                                <input type="file" multiple="true" id="up_img" name="file1" class="form-control" style="border:none;display:inline-block;" form="form1">
-
-                                <input type="hidden" name="fengmian" id="fengmian" value="<?php  $msg=$_GET['msg']; $name=$_GET['name']; if($msg){ echo $name;}else{ echo ($albumInfo["fengmian"]); ?> <?php } ?>"/>
-                                <div id="imgDefault" style="float:left;">
-                                    <img id="img" src="/appserver/Public/weixinapp/upload/<?php  $msg=$_GET['msg']; $name=$_GET['name']; if($msg){ echo $name;}else{ echo ($albumInfo["fengmian"]); ?> <?php } ?>" style="margin:20px 20px 0 0;width:200px;"/>
-                                    <button type="submit" class="btn btn-primary" id="upload" form="form1">上传</button>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="form-group">
+                            <input type="hidden" name="id" value="<?php echo ($business["id"]); ?>">
                             <label class="col-sm-2 col-sm-2 control-label">名称</label>
-                            <input type="hidden" name="id" value="<?php echo ($albumInfo["id"]); ?>"/>
                             <div class="col-sm-10">
-                                <input type="text" name="title" class="form-control" value="<?php echo ($albumInfo["title"]); ?>"/>
+                                <input type="text" name="name" class="form-control" value="<?php echo ($business["name"]); ?>">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">描述</label>
+                            <label class="col-sm-2 col-sm-2 control-label">功能</label>
                             <div class="col-sm-10">
-                                <input type="text" name="content" class="form-control" value="<?php echo ($albumInfo["content"]); ?>"/>
+                                <select type="text" class="form-control" id="role" name="gongneng_id" placeholder="请
+输入权限">
+
+                                    <?php if(is_array($list1)): $i = 0; $__LIST__ = $list1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>" <?php if($business[company_id]==$vo[id]){?>selected<?php }?>><?php echo ($vo["name"]); ?></option>
+                                        <!--<?php if($business["company_id"] == '<?php echo ($vo["id"]); ?>'): ?>selected<?php endif; ?>--><?php endforeach; endif; else: echo "" ;endif; ?>
+                                    <!--<?php if(is_array($list1)): $i = 0; $__LIST__ = $list1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>-->
+                                        <!--<option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option>-->
+                                    <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
+                                </select>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">开始时间</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="begin_date" class="form-control" value="<?php echo ($business["begin_date"]); ?>">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">结束时间</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="over_date" class="form-control" value="<?php echo ($business["over_date"]); ?>">
+                            </div>
+                        </div>
+
                         <button type="submit" id="s" class="btn btn-info">提交</button>
-                        <a href="<?php echo U('user/userlist');?>" class="btn btn-danger">取消</a>
+                        <a href="<?php echo U('mokuai/mokuailist','Id='.$business['company_id']);?>" class="btn btn-danger">取消</a>
 
                     </form>
-                    <form class="form-horizontal tasi-form"  enctype="multipart/form-data"  method="post" action="<?php echo U('Front/albumUpload');?>" id="form1">
-                        <input type="hidden" value="edit" name="sign"/>
-                        <input type="hidden" value="<?php echo ($albumInfo["id"]); ?>" name="id"/>
-                        <input type="hidden" value="<?php echo ($mokuai_id); ?>" name="mokuai_id"/>
-                    </form>
+
                 </div>
 
 
@@ -242,23 +261,17 @@
 
 
 
-<script src="/appserver/Public/weixinapp/js/jquery.js"></script>
-<script src="/appserver/Public/weixinapp/js/bootstrap.min.js"></script>
-<script class="include" type="text/javascript" src="/appserver/Public/weixinapp/js/jquery.dcjqaccordion.2.7.js"></script>
-<script src="/appserver/Public/weixinapp/js/jquery.scrollTo.min.js"></script>
-<script src="/appserver/Public/weixinapp/js/slidebars.min.js"></script>
-<script src="/appserver/Public/weixinapp/js/jquery.nicescroll.js" type="text/javascript"></script>
-<script src="/appserver/Public/weixinapp/js/respond.min.js" ></script>
+<script src="/appserver1/Public/weixinapp/js/jquery.js"></script>
+<script src="/appserver1/Public/weixinapp/js/bootstrap.min.js"></script>
+<script class="include" type="text/javascript" src="/appserver1/Public/weixinapp/js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="/appserver1/Public/weixinapp/js/jquery.scrollTo.min.js"></script>
+<script src="/appserver1/Public/weixinapp/js/slidebars.min.js"></script>
+<script src="/appserver1/Public/weixinapp/js/jquery.nicescroll.js" type="text/javascript"></script>
+<script src="/appserver1/Public/weixinapp/js/respond.min.js" ></script>
 
 <!--common script for all pages-->
-<script src="/appserver/Public/weixinapp/js/common-scripts.js"></script>
-<script type="text/javascript">
-    window.onload = function () {
-        new uploadPreview({ UpBtn: "up_img", DivShow: "imgDefault", ImgShow: "img" });
+<script src="/appserver1/Public/weixinapp/js/common-scripts.js"></script>
 
-    }
-</script>
 
 </body>
 </html>
->

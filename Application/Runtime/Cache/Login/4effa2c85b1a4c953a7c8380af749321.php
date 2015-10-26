@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
 
-    <title>编辑公司</title>
+    <title>微宝</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/appserver1/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
@@ -63,7 +63,7 @@
         <div data-original-title="左侧菜单" data-placement="right" class="fa fa-bars tooltips"></div>
     </div>
     <!--logo start-->
-    <a href="index.html" class="logo" >WB<span>admin</span></a>
+    <a href="index.html" class="logo" >vk<span>admin</span></a>
     <!--logo end-->
     <div class="nav notify-row" id="top_menu">
         <!--  notification start -->
@@ -148,12 +148,13 @@
                     <span>活动</span>
                 </a>
                 <ul class="sub">
-                    <li><a id="a1" class="activeColor" href="<?php echo U('Front/companyuserlist','mokuai_id='.$mokuai_id);?>">用户列表1</a></li>
+
+                    <li><a id="a1" class="activeColor" href="<?php echo U('User/userlist');?>">用户列表</a></li>
 
                 </ul>
                 <ul class="sub">
 
-                    <li><a id="a2" class="activeColor" href="<?php echo U('Front/memberlist','mokuai_id='.$mokuai_id);?>">会员管理列表</a></li>
+                    <li><a id="a2" class="activeColor" href="<?php echo U('Company/companylist');?>">公司列表</a></li>
 
                 </ul>
                 <ul class="sub">
@@ -179,26 +180,59 @@
         <section class="wrapper site-min-height" >
             <section class="panel">
                 <header class="panel-heading">
-                    编辑管理
+                    新建用户
                 </header>
                 <!-- page start-->
                 <div class="panel-body">
-                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="/appserver1/index.php/Front/Front/memberupdate">
-                        <input type="hidden" name="id" value="<?php echo ($business["id"]); ?>">
+                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="/appserver1/index.php/Login/User/useradd">
                         <div class="form-group">
                             <label class="col-sm-2 col-sm-2 control-label">名称</label>
                             <div class="col-sm-10">
-                                <input type="text" name="name" class="form-control" value="<?php echo ($business["name"]); ?>">
+                                <input type="text" name="name" class="form-control">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">积分</label>
+                            <label class="col-sm-2 col-sm-2 control-label">手机号</label>
                             <div class="col-sm-10">
-                                <input type="text" name="jifen" class="form-control" value="<?php echo ($business["jifen"]); ?>">
+                                <input type="text" name="phone" class="form-control">
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">用户名</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="username" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">密码</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 col-sm-2 control-label">公司</label>
+                            <div class="col-sm-10">
+                        <select type="text" class="form-control" id="role" name="company_id" placeholder="请
+输入权限">
+                            <option value="" selected>请选择公司</option>
+                            <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                        </select>
+                            </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 col-sm-2 control-label">权限</label>
+                    <div class="col-sm-10">
+                    <select type="text" class="form-control" id="role1" name="role" placeholder="请
+输入权限">
+                        <option value="" selected>请选择权限</option>
+                        <option value="微宝后台管理" >微宝后台管理</option>
+                        <option value="公司管理" >公司管理</option>
+                        <option value="公司老板" >公司老板</option>
+                    </select>
+                        </div>
+                </div>
                         <button type="submit" id="s" class="btn btn-info">提交</button>
-                        <a href="<?php echo U('Front/memberlist','mokuai_id='.$mokuai_id);?>" class="btn btn-danger">取消</a>
+                        <a href="<?php echo U('user/userlist');?>" class="btn btn-danger">取消</a>
 
                     </form>
 
