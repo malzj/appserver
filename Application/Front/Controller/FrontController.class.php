@@ -192,22 +192,23 @@ class FrontController extends Controller{
         $huiyuan = $MeberModel->where($sql)->order('jifen desc')->find();
 //            var_dump($huiyuan);
 //            exit();
-        if(IS_POST){
+        if(IS_POST) {
             header("Content-Type:text/html; charset;utf-8");
             $map = array();
             $map = $_POST;
             $map['company_id'] = $user['company_id'];
-            $map['huiyuanbianhao'] = $user['company_id'].time().($companyuser['id']+1);
-            $map['add_date'] = date( 'Y-m-d',time());
+            $map['huiyuanbianhao'] = $user['company_id'] . time() . ($companyuser['id'] + 1);
+            $map['add_date'] = date('Y-m-d', time());
             $map['zongjifen'] = $_POST['jifen'];
             $map['huiyuan_id'] = $huiyuan['id'];
             $id = $Dao->add($map);
-            if($id){
-                $this->redirect("front/companyuserlist",'mokuai_id='.$_POST['mokuai_id']);
+            if ($id) {
+                $this->redirect("front/companyuserlist", 'mokuai_id=' . $_POST['mokuai_id']);
             }
+        }}
 
-        }
-    }
+
+
 //    用户删除
     public function companyuserdelete(){
         $id = $_REQUEST['id'];

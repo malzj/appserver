@@ -28,76 +28,7 @@
 </head>
 <section id="container" class="">
     <!--header start-->
-    <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-
-    <title>Blank</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="/appserver/Public/weixinapp/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/appserver/Public/weixinapp/css/bootstrap-reset.css" rel="stylesheet">
-    <!--external css-->
-    <link href="/appserver/Public/weixinapp/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
-
-    <!--right slidebar-->
-    <link href="/appserver/Public/weixinapp/css/slidebars.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="/appserver/Public/weixinapp/css/style.css" rel="stylesheet">
-    <link href="/appserver/Public/weixinapp/css/style-responsive.css" rel="stylesheet" />
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
-    <!--[if lt IE 9]>
-    <script src="/appserver/Public/weixinapp/js/html5shiv.js"></script>
-    <script src="/appserver/Public/weixinapp/js/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
-<header class="header white-bg">
-    <div class="sidebar-toggle-box">
-        <div data-original-title="左侧菜单" data-placement="right" class="fa fa-bars tooltips"></div>
-    </div>
-    <!--logo start-->
-    <a href="index.html" class="logo" >WB<span>admin</span></a>
-    <!--logo end-->
-    <div class="nav notify-row" id="top_menu">
-        <!--  notification start -->
-        <ul class="nav top-menu">
-
-        </ul>
-    </div>
-    <div class="top-nav ">
-        <ul class="nav pull-right top-menu">
-
-            <!-- user login dropdown start-->
-            <!--<li class="dropdown">-->
-                <!--<a data-toggle="dropdown" class="dropdown-toggle" href="#">-->
-                    <!--<img alt="" src="img/avatar1_small.jpg">-->
-                    <!--<span class="username">风华</span>-->
-                    <!--<b class="caret"></b>-->
-                <!--</a>-->
-                <!--<ul class="dropdown-menu extended logout">-->
-                    <!--<div class="log-arrow-up"></div>-->
-                    <!--<li><a href="#"><i class=" fa fa-suitcase"></i>个人资料</a></li>-->
-                    <!--<li><a href="#"><i class="fa fa-cog"></i> 设置</a></li>-->
-                    <!--<li><a href="#"><i class="fa fa-bell-o"></i> 通知</a></li>-->
-                    <!--<li><a href="login.html"><i class="fa fa-key"></i> 安全退出</a></li>-->
-                <!--</ul>-->
-            <!--</li>-->
-
-            <!-- user login dropdown end -->
-            <li class="sb-toggle-right" style="display: none;">
-                <i class="fa  fa-align-right"></i>
-            </li>
-        </ul>
-    </div>
-</header>
-</body>
-</html>
+    
     <!--header end-->
     <!--sidebar start-->
     <!DOCTYPE html>
@@ -168,16 +99,16 @@
                         <!-- page start-->
                         <header class="panel-heading clearfix">
                             图片列表
-                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="<?php echo U('Front/albumDelete',array('id'=>$albumId,'mokuai_id'=>$mokuai_id));?>" onclick="return confirm('确定要删除吗？') ">删除相册</a>
-                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="<?php echo U('Front/albumEdit',array('id'=>$albumId,'mokuai_id'=>$mokuai_id));?>">修改相册</a>
-                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="<?php echo U('Front/pictureCreate',array('id'=>$albumId,'mokuai_id'=>$mokuai_id));?>">上传图片</a>
-                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="<?php echo U('Front/albumList','mokuai_id='.$mokuai_id);?>">返回相册列表</a>
+                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="<?php echo U('Album/albumDelete',array('id'=>$albumId,'mokuai_id'=>$mokuai_id));?>" onclick="return confirm('确定要删除吗？') ">删除相册</a>
+                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="<?php echo U('Album/albumEdit',array('id'=>$albumId,'mokuai_id'=>$mokuai_id));?>">修改相册</a>
+                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="<?php echo U('Album/pictureCreate',array('id'=>$albumId,'mokuai_id'=>$mokuai_id));?>">上传图片</a>
+                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="<?php echo U('Album/albumList','mokuai_id='.$mokuai_id);?>">返回相册列表</a>
                         </header>
                         <div class="panel-body" style="min-height:100%;">
 
                             <ul class="albumlist clearfix row">
                                 <?php if(is_array($pictureList)): $i = 0; $__LIST__ = $pictureList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="album col-sm-2">
-                                        <a class="album_pic" href="<?php echo U('Front/pictureShow',array('id'=>$vo['id'],'mokuai_id'=>$mokuai_id));?>"><img src="/appserver/Public/weixinapp/upload/<?php echo ($vo['img']); ?>" /></a>
+                                        <a class="album_pic" href="<?php echo U('Album/pictureShow',array('id'=>$vo['id'],'mokuai_id'=>$mokuai_id));?>"><img src="/appserver/Public/weixinapp/upload/<?php echo ($vo['img']); ?>" /></a>
                                         <span><?php echo ($vo["name"]); ?></span>
                                     </li><?php endforeach; endif; else: echo "" ;endif; ?>
                             </ul>

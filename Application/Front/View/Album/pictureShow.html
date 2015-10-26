@@ -40,8 +40,8 @@
                     <section class="panel" style="height:100%;background:#000;color:#fff;">
                         <header class="panel-heading clearfix">
                             图片详情
-                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="{:U('Front/pictureDelete','id='.$pictureInfo['id'])}" onclick="return confirm('确定要删除吗？') ">删除图片</a>
-                            <!--<a  class="btn btn-primary" style="margin-right: 20px;float: right" href="{:U('Front/pictureEdit','id='.$pictureInfo['id'])}">修改备注</a>-->
+                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="{:U('Album/pictureDelete',array('id'=>$pictureInfo['id'],'mokuai_id'=>$mokuai_id))}" onclick="return confirm('确定要删除吗？') ">删除图片</a>
+                            <!--<a  class="btn btn-primary" style="margin-right: 20px;float: right" href="{:U('Album/pictureEdit','id='.$pictureInfo['id'])}">修改备注</a>-->
 
 
                         </header>
@@ -53,6 +53,7 @@
                         </div>
                     </section>
                 </div>
+                <input type="-hidden" value="{$mokuai_id}" name="mokuai_id"/>
                 <div class="col-sm-4" style="height:100%;">
                     <section class="panel" style="height:100%;">
                         <div class="panel-body" style="height:100%;">
@@ -69,7 +70,7 @@
                             <div style="margin-top:20px;">图片备注：{$pictureInfo.introduction}</div>
                             <div>创建时间：{$pictureInfo.add_date}</div>
                             <h2 style="font-size:16px;clear:both;color:#03a9f4">添加评论</h2>
-                            <form enctype="multipart/form-data"  method="post" action="{:U('Front/replyAdd')}" class="clearfix">
+                            <form enctype="multipart/form-data"  method="post" action="{:U('Album/replyAdd')}" class="clearfix">
                                 <textarea name="content" style="width:100%;resize:none;" rows="4"></textarea>
                                 <button type="reset" class="btn btn-info" style="float:right;margin-left:20px;"/>取消</button>
                                  <button type="submit"  class="btn btn-info" style="float:right;">提交</button>

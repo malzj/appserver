@@ -41,20 +41,22 @@
                     <section class="panel">
                         <!-- page start-->
                         <header class="panel-heading clearfix">
-                            相册列表
-                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="{:U('Front/albumCreate','mokuai_id='.$mokuai_id)}">创建相册</a>
+                            图片列表
+                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="{:U('Album/albumDelete',array('id'=>$albumId,'mokuai_id'=>$mokuai_id))}" onclick="return confirm('确定要删除吗？') ">删除相册</a>
+                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="{:U('Album/albumEdit',array('id'=>$albumId,'mokuai_id'=>$mokuai_id))}">修改相册</a>
+                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="{:U('Album/pictureCreate',array('id'=>$albumId,'mokuai_id'=>$mokuai_id))}">上传图片</a>
+                            <a  class="btn btn-primary" style="margin-right: 20px;float: right" href="{:U('Album/albumList','mokuai_id='.$mokuai_id)}">返回相册列表</a>
                         </header>
-                        <div class="panel-body">
+                        <div class="panel-body" style="min-height:100%;">
 
-                           <ul class="albumlist clearfix row">
-                               <volist name="list"  id="vo">
-                                   <li class="album col-sm-2">
-                                        <a class="album_pic" href="{:U('Front/albumShow',array('id'=>$vo['id'],'mokuai_id'=>$mokuai_id))}"><img src="__PUBLIC__/weixinapp/upload/{$vo['fengmian']}"/></a>
-                                        <span>{$vo.title}</span>
-                                   </li>
-
-                               </volist>
-                           </ul>
+                            <ul class="albumlist clearfix row">
+                                <volist name="pictureList"  id="vo">
+                                    <li class="album col-sm-2">
+                                        <a class="album_pic" href="{:U('Album/pictureShow',array('id'=>$vo['id'],'mokuai_id'=>$mokuai_id))}"><img src="__PUBLIC__/weixinapp/upload/{$vo['img']}" /></a>
+                                        <span>{$vo.name}</span>
+                                    </li>
+                                </volist>
+                            </ul>
                             <div class="dataTables_paginate paging_bootstrap pagination">{$page}</div>
                         </div>
                     </section>

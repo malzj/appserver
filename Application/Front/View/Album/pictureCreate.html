@@ -42,7 +42,7 @@
                 </header>
                 <!-- page start-->
                 <div class="panel-body">
-                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="{:U('Front/pictureAdd')}">
+                    <form class="form-horizontal tasi-form" id="sv" enctype="multipart/form-data"  method="post" action="{:U('Album/pictureAdd')}">
                         <input type="hidden" value="{$albumId}" name="id"/>
                         <input type="hidden" value="{$mokuai_id}" name="mokuai_id"/>
                         <div class="form-group">
@@ -65,11 +65,11 @@
                             </div>
                         </div>
                         <button type="submit" id="s" class="btn btn-info">提交</button>
-                        <a href="{:U('Front/albumList')}" class="btn btn-danger">取消</a>
+                        <a href="{:U('Album/albumList')}" class="btn btn-danger">取消</a>
 
 
                     </form>
-                    <form class="form-horizontal tasi-form"  enctype="multipart/form-data"  method="post" action="{:U('Front/albumUpload')}" id="form1">
+                    <form class="form-horizontal tasi-form"  enctype="multipart/form-data"  method="post" action="{:U('Album/albumUpload')}" id="form1">
                         <input type="hidden" value="add" name="sign"/>
                         <input type="hidden" value="{$albumId}" name="id"/>
                         <input type="hidden" value="{$mokuai_id}" name="mokuai_id"/>
@@ -130,7 +130,7 @@
 //        $('#upload').click(function(){
 //            var img=$('#up_img').val();
 //            $.ajax({
-//                url: '__APP_PATH__/Front/albumUpload',
+//                url: '__APP_PATH__/Album/albumUpload',
 //                type: 'post',
 //                dataType: 'json',
 //                data: {
